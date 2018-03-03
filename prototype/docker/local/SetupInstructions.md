@@ -1,4 +1,4 @@
-Cheatsheet Setup
+= Cheatsheet Setup =
 
 === Download and install VirtualBox. 
 === Download Ubuntu 16.04.03 and create a VM.
