@@ -10,7 +10,7 @@ ENV MYSQL_PASSWORD moreLiverPlease
 # Copy files from host directory to container
 # TODO: need volume
 # ADD <local path> <container path>
-#COPY patients.txt /var/lib/liver/
+#COPY patients.txt /var/lib/mysql/
 
 # Expose a port for container host consumption
 EXPOSE 3306
