@@ -35,16 +35,27 @@ function init() {
   var onError = function (xhr) {
   };
 
-  var loader = new THREE.OBJLoader(manager); loader.load('resources/model/Liver.obj', function (object) {
+  // Load using OBJLoader
+  // var loader = new THREE.OBJLoader(manager); loader.load('resources/model/Liver.obj', function (object) {
+  //
+  //   object.traverse(function (child) {
+  //     if (child instanceof THREE.Mesh) {
+  //       child.material.map = texture;
+  //     }
+  //   } );
+  //
+  //   object.position.y = 0; scene.add(object);
+  // }, onProgress, onError);
 
-    object.traverse(function (child) {
-      if (child instanceof THREE.Mesh) {
-        child.material.map = texture;
-      }
-    } );
+  // Load using JSONLoader
+  var loader = new THREE.JSONLoader(manager);
 
-    object.position.y = 0; scene.add(object);
-  }, onProgress, onError);
+  loader.load('resources/model/liverhealthy.json', function (geometry, materials) {
+    var material = materials[0];
+    var object = new THREE.Mesh(geometry, material);
+    // object.scale.set(0.5,0.5,0.5);
+    scene.add(object);
+  }, );
 
   renderer = new THREE.WebGLRenderer(); renderer.setPixelRatio(
     window.devicePixelRatio); renderer.setSize(window.innerWidth,
