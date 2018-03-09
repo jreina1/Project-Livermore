@@ -1,0 +1,36 @@
+# 
+# * Builds from the Dockerfile in the current directory.
+# * Forwards the exposed port 5000 on the container to 
+#   port 5000 on the host machine..
+# * Mounts the current directory on the host to /code inside 
+#   the container allowing you to modify the code without 
+#   having to rebuild the image.
+
+pl-storage:
+  image: busybox
+  volumes:
+   - /var/lib/liver
+
+pl-webui:
+  build: ./pl-webui
+  restart: always
+  ports:
+   - "5000:5000"
+  volumes_from:
+   - pl-storage
+  volumes:
+   - .:/code
+  links:
+   - pl-mysql
+
+pl-mysql:
+  build: ./pl-mysql
+  container_name: pl-mysql
+  restart: always
+  ports:
+   - "3306:3306"
+  volumes_from:
+   - pl-storage
+
+pl-fhircxn:
+  build: ./pl-fhircxn
