@@ -18,20 +18,28 @@ docker-compose build
 
 ### run it
 
+it’s ready when it says [Entrypoint] Starting MySQL 5.7.21-1.1.3.
+it won't always say that though after it has been run the first time.
+
 ```
-docker-compose up (it’s ready when it says [Entrypoint] Starting MySQL 5.7.21-1.1.3)
+docker-compose up 
 ```
 
 ### or run in background
 
+may have conflated this with the docker cmd.  will check.
 ```
 docker-compose -d up
 ```
 
 ### Point browser to the web container
 
+just shows 1 part of 1 entry from db at the moment.
+python libraries for flask and mysql are available.
+the app.py file tests the libraries and connectivity to the mysql container.
+
 ```
-localhost:5000 (just shows 1 part of 1 entry from db)
+localhost:5000 
 ```
 
 ### stop it and cleanup
