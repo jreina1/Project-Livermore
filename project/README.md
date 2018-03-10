@@ -56,6 +56,9 @@ cd <directory (one of pl-webui, pl-mysql, pl-fhircxn)>
 
 ### copies web folder to container
 
+put files in the web folder in the pl-webui directory.
+there should be an app.py file in there.  that's where index.html should go too.
+
 ```
 docker build -t pl-webui .
 docker run -it -p 5000:5000 pl-webui 
