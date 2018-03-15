@@ -1,5 +1,8 @@
 # Use mysql image as a base
-FROM mysql/mysql-server:latest
+# FROM mysql/mysql-server:latest
+FROM mariadb:latest
+
+
 
 # Environment variables
 ENV MYSQL_ROOT_PASSWORD mysecretpassword
