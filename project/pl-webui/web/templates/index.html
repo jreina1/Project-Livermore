@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Project Livermore - Prototype</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="resources/css/style.css">
+	</head>
+
+	<body>
+		<div id="info">
+		Project Livermore - Prototype
+		</div>
+
+		<script src="{{ url_for('static', filename = 'vendors/threejs/three.js') }}"></script>
+		<script src="{{ url_for('static', filename = 'vendors/threejs/OBJLoader.js') }}"></script>
+		<script src="{{ url_for('static', filename = 'vendors/threejs/JSONLoader.js') }}"></script>
+		<script src="{{ url_for('static', filename = 'vendors/threejs/OrbitControls.js') }}"></script>
+		<script src="{{ url_for('static', filename = 'resources/js/render.js') }}"></script>
+
+	</body>
+</html>

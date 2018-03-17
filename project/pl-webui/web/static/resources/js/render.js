@@ -1,0 +1,81 @@
+var container;
+var camera, scene, renderer, controls;
+var mouseX = 0, mouseY = 0;
+var windowHalfX = window.innerWidth/2; var windowHalfY = window.innerHeight/2;
+
+// Files to Load
+var jsonObject = '/static/resources/model/liverhealthy.json';
+
+init(); animate();
+
+function init() {
+  container = document.createElement('div'); document.body.appendChild(container);
+  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 6500);
+  camera.position.set(0, 0, 650);
+
+  // Build Scene & Lighting
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xf5f5f5);
+
+  var ambientLight = new THREE.AmbientLight(0xcccccc, 1.5); scene.add(ambientLight);
+  var pointLight = new THREE.PointLight(0xaaaaaa, 0.4); camera.add(pointLight); scene.add(camera);
+
+  // Tracking of data
+  var manager = new THREE.LoadingManager(); manager.onProgress = function (item, loaded, total) {
+    console.log(item, loaded, total);
+  };
+
+  // Model
+  var onProgress = function (xhr) {
+    if (xhr.lengthComputable) {
+      var percentComplete = xhr.loaded / xhr.total * 100; console.log(Math.round(percentComplete, 2) + '% downloaded');
+    }
+  };
+
+  var onError = function (xhr) {
+  };
+
+  // Load using JSONLoader
+  var loader = new THREE.JSONLoader(manager);
+  loader.load(jsonObject, function (geometry, materials) {
+    var material = materials[0];
+    var object = new THREE.Mesh(geometry, material);
+    // object.scale.set(0.5,0.5,0.5);
+    scene.add(object);
+  }, );
+
+  renderer = new THREE.WebGLRenderer(); renderer.setPixelRatio(
+    window.devicePixelRatio); renderer.setSize(window.innerWidth,
+      window.innerHeight); container.appendChild(renderer.domElement);
+
+  // Control Setup
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enablePan = false; controls.enableZoom = true;
+  controls.enableDamping = true; controls.dampingFactor = 1.0;
+  controls.maxDistance = 6000; controls.minDistance = 350;
+  controls.rotateSpeed = .5; controls.zoomSpeed = 0.5;
+
+  window.addEventListener('resize', onWindowResize, false);
+}
+
+function onWindowResize() {
+  windowHalfX = window.innerWidth / 2; windowHalfY = window.innerHeight / 2;
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  controls.update();
+  render();
+
+}
+
+function render() {
+  camera.lookAt(scene.position);
+  renderer.render(scene, camera);
+
+}
