@@ -36,14 +36,14 @@ pipeline{
                 //as the latest version.
                 script{
                     docker.withRegistry('https://apps2.hdap.gatech.edu'){
-                        def pl-fhirImage = docker.build("pl-fhir:1.0", "-f project/pl-fhir/Dockerfile project/pl-fhir")
-                        pl-fhirImage.push('latest')
-                        def pl-fhircxnImage = docker.build("pl-fhircxn:1.0", "-f project/pl-fhircxn/Dockerfile project/pl-fhircxn")
-                        pl-fhircxnImage.push('latest')
-                        def pl-mysqlImage = docker.build("pl-mysql:1.0", "-f project/pl-mysql/Dockerfile project/pl-mysql")
-                        pl-mysqlImage.push('latest')
-                        def pl-webuiImage = docker.build("pl-webui:1.0", "-f project/pl-webui/Dockerfile project/pl-webui")
-                        pl-webuiImage.push('latest')
+                        def plfhirImage = docker.build("pl-fhir:1.0", "-f project/pl-fhir/Dockerfile project/pl-fhir")
+                        plfhirImage.push('latest')
+                        def plfhircxnImage = docker.build("pl-fhircxn:1.0", "-f project/pl-fhircxn/Dockerfile project/pl-fhircxn")
+                        plfhircxnImage.push('latest')
+                        def plmysqlImage = docker.build("pl-mysql:1.0", "-f project/pl-mysql/Dockerfile project/pl-mysql")
+                        plmysqlImage.push('latest')
+                        def plwebuiImage = docker.build("pl-webui:1.0", "-f project/pl-webui/Dockerfile project/pl-webui")
+                        plwebuiImage.push('latest')
                     }
                 }
             }
