@@ -22,7 +22,5 @@ mysql -v -u iwant -pmoreLiverPlease livermore -e "create table diseaseEducation 
 	PRIMARY KEY (id) );"
 #	not sure how useful this is, but anyhoo can be added FOREIGN KEY (snomed) REFERENCES patients(loinc),
 
-
-mysql -v -u root -pmysecretpassword livermore -e "load data infile '/usr/share/mysql-data/patients.txt' into table patients fields terminated by ',';"
-
+mysql -v -u root -pmysecretpassword livermore -e "load data infile '/docker-entrypoint-initdb.d/patients.txt' into table patients fields terminated by ',';"
 
