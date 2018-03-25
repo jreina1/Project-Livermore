@@ -1,0 +1,34 @@
+1. Start the fhir service
+
+> cd pl-fhir
+> docker build -t pl-fhir .
+> docker run --name pl-fhir -d -p 8080:8080 pl-fhir
+> visit: http://localhost:8080
+
+2. Start the mysql service
+
+> cd pl-mysql
+> docker build -t pl-mysql .
+> docker run --name pl-mysql -d -p 3306:3306 pl-mysql
+
+3. Run the fhirCxn service
+
+> cd pl-fhircxn
+> docker build -t pl-fhircxn .
+> docker run --name pl-fhircxn -d pl-fhircxn
+
+4. Run the webui service
+
+> cd pl-webui
+> docker build -t pl-webui .
+> docker run --name pl-webui -d -p 5000:5000 pl-webui
+> 
+
+
+docker ps -a
+docker stop pl-webui pl-mysql pl-fhir
+docker container prune
+
+docker-compose build
+docker-compose up
+docker-compose down
