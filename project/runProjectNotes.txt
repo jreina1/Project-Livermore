@@ -1,0 +1,11 @@
+mysql -u iwant -pmoreLiverPlease --protocol=TCP
+=====================
+docker-compose up
+docker-compose up -d --no-deps --build <service_name>
+docker-compose down
+=====================
+edit file in eclipse
+right click on pom.xml and select
+-> Run as -> Maven build -> pl-fhircxn(5): clean compile assembly:single
+-> Run as -> Maven build -> pl-fhircxn(2): clean install
+=====================
