@@ -1,7 +1,9 @@
-DROP DATABASE IF EXISTS `livermore`;
+DROP DATABASE IF EXISTS `livermore_schema2`;
 
-CREATE DATABASE IF NOT EXISTS livermore;
-USE livermore;
+CREATE DATABASE IF NOT EXISTS livermore_schema2;
+USE livermore_schema2;
+
+
 
 
 CREATE TABLE PatientID (
@@ -21,8 +23,8 @@ CREATE TABLE Patient (
     Patient_symptoms TEXT NOT NULL,
     Patient_treatment TEXT NOT NULL,
     
-    PRIMARY KEY (Patient_id),
-    KEY (Id)
+    PRIMARY KEY (id),
+    KEY (Patient_id)
 
 );
 
@@ -31,9 +33,9 @@ CREATE TABLE Disease (
     Patient_snomed_code INT NOT NULL,
     Disease_name TEXT NOT NULL,
     Disease_overview TEXT NOT NULL,
-    Disease_symptoms TEXT,
+    Disease_symptoms TEXT NOT NULL,
     Disease_treatment TEXT,
-    Disease_causes TEXT,
+    Disease_causes TEXT NOT NULL,
     Disease_risk_factors TEXT,
     Disease_complications TEXT, 
     Disease_preventions TEXT,
@@ -41,9 +43,5 @@ CREATE TABLE Disease (
     
     PRIMARY KEY (Id)
 
-);
 
-/* constraint patient id --> patient */
-ALTER TABLE Patient
-	ADD CONSTRAINT fk_Patient_Id_PatientID_Id FOREIGN KEY (Id) REFERENCES PatientID (Id);
-   
+);
