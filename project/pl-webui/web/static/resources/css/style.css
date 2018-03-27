@@ -1,11 +1,16 @@
 body,
+html {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif
+	font-family: "Montserrat", sans-serif;
 }
 
 .w3-row-padding img {
@@ -18,7 +23,13 @@ h6 {
 }
 
 #main {
-  margin-left: 120px
+  margin-left: 160px;
+  height: 100%;
+}
+
+#infobar {
+	height: 100%;
+	overflow: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,6 +37,8 @@ h6 {
     margin-left: 0
   }
 }
+
+
 
 /* 
 body {
