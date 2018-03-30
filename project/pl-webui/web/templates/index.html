@@ -16,27 +16,27 @@
 				<img src="http://www.comm.gatech.edu/sites/comm.gatech.edu/files/images/georgiatechlogo-white-675x315.png" style="width:100%">
 			</a>
 
-			<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
 				<p>Patient 1</p>
 			</a>
 
-			<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
 				<p>Patient 2</p>
 			</a>
 
-			<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
 				<p>Patient 3</p>
 			</a>
 
-			<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
 				<p>Patient 4</p>
 			</a>
 		</nav>
 		</div>
 		
-		<div class="w3-display-container" id="main">
+		<div id="main">
 		
-			<div class="w3-padding-small">
+			<div>
 		      	<p>
 						<script src="{{ url_for('static', filename = 'vendors/threejs/three.js') }}"></script>
 						<script src="{{ url_for('static', filename = 'vendors/threejs/OBJLoader.js') }}"></script>
@@ -47,34 +47,53 @@
 				
 			</div>
 			
-			<div class="w3-card w3-display-topright w3-quarter w3-black" id="infobar">
-				<header class="w3-container w3-center" id="home">
-		      		<h1><span class="w3-hide-small">Liver</span> More</h1>
+			
+			<div class="infobox w3-quarter">
+			
+				<button onClick="infoHide('infobar')" class="w3-btn w3-black row btn" title="Click Here to Expand">
+					<header class="w3-center">
+		      		<h4><span class="w3-hide-small">Disease</span> Information</h4>
 		        </header>
-		        
-		        <div class="w3-content w3-justify w3-text-grey w3-padding-5" id="about">
-		     		 <h2 class="w3-text-light-grey">Patient</h2>
+				</button>
+				
+				<div class="w3-card w3-black w3-hide w3-content w3-justify w3-text-grey w3-padding-5 row content" id="infobar">
+		     		 <h5 class="w3-text-light-grey">Patient</h5>
 	
 		     		 <p class="w3-wide">Name: Joe Johnson</p>
 		     		 <p class="w3-wide">Date Of Birth: 01/01/1999</p>
 		     		 <p class="w3-wide">Address: 888 atlanta GA 33189</p>
 		     		 <p class="w3-wide">Hospital: Atlanta Primary Care</p>
 	
-		      		 <h2 class="w3-text-light-grey">Condition</h2>
+		      		 <h5 class="w3-text-light-grey">Condition</h5>
 		     		 <p class="w3-wide">Docker test</p>
 	
 		     		 <br>
-		     		 <h2 class="w3-text-light-grey">Diagnosis</h2>
+		     		 <h5 class="w3-text-light-grey">Diagnosis</h5>
 		     		 <p class="w3-wide">Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this
 		        is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis</p>
 	
 				</div>
 			
 			</div>
+			
 		
 		</div>
-					
 		
-
+		
+		<script>
+			function infoHide(id) {
+				var x = document.getElementById(id);
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		
+		
+		</script>
+		
+		
+		
 	</body>
 </html>
