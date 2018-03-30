@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -32,35 +33,32 @@ h6 {
   margin-left: 160px;
 }
 
-#infobar {
+
+.infobox {
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-flow: column;
 	height: 100vh;
+}
+
+.infobox .row {
+	
+}
+
+.infobox .row.btn {
+	flex: 0 1 auto;
+}
+
+.infobox .row.content {
+	flex: 1 1 auto;
 	overflow: auto;
 }
+
 
 @media only screen and (max-width: 600px) {
   #main {
     margin-left: 0
   }
 }
-
-
-
-/* 
-body {
-  font-family: Monospace;
-  background-color: #000;
-  color: #fff;
-  margin: 0px;
-  overflow: hidden;
-}
-#info {
-  color: #000;
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  text-align: center;
-  z-index: 100;
-  display:block;
-}
-#info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
-*/
