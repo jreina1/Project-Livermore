@@ -26,7 +26,6 @@ services:
   pl-fhircxn:
     container_name: pl-fhircxn
     build: ./pl-fhircxn
-    #restart: always
     links:
     - pl-mysql
     - pl-fhir
