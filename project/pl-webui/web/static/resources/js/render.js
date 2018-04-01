@@ -4,7 +4,8 @@ var mouseX = 0, mouseY = 0;
 var windowHalfX = window.innerWidth/2; var windowHalfY = window.innerHeight/2;
 
 // Files to Load
-var jsonObject = '/static/resources/model/liverhealthy.json';
+//var jsonObject = '/static/resources/model/liverhealthy.json';
+var fbxObject = '/static/resources/model/arcade.fbx';
 
 init(); animate();
 
@@ -35,7 +36,8 @@ function init() {
   var onError = function (xhr) {
   };
 
-  // Load using JSONLoader
+  // Load model using JSONLoader
+  /*
   var loader = new THREE.JSONLoader(manager);
   loader.load(jsonObject, function (geometry, materials) {
     var material = materials[0];
@@ -47,6 +49,20 @@ function init() {
   renderer = new THREE.WebGLRenderer(); renderer.setPixelRatio(
     window.devicePixelRatio); renderer.setSize(window.innerWidth,
       window.innerHeight); container.appendChild(renderer.domElement);
+  */
+      
+  // Load model using FBXLoader
+  var loader = new THREE.FBXLoader(manager);
+  loader.load(fbxObject, function (object) {
+	 scene.add(object); 
+  }, undefined, function (error) {
+	  console.error(error);
+  });
+  
+  renderer = new THREE.WebGLRenderer(); 
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  container.appendChild(renderer.domElement);
 
   // Control Setup
   controls = new THREE.OrbitControls(camera, renderer.domElement);
