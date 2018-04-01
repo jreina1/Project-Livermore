@@ -8,54 +8,60 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{ url_for('static', filename = 'resources/css/style.css') }}">
 
-	<body class="w3-white">
+	<body>
 		
+		<!-- Left-hand Patient Navigation Bar -->
 		<div class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
-		<nav>
-			<a href="http://www.gatech.edu/">
-				<img src="http://www.comm.gatech.edu/sites/comm.gatech.edu/files/images/georgiatechlogo-white-675x315.png" style="width:100%">
-			</a>
-
-			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-				<p>Patient 1</p>
-			</a>
-
-			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-				<p>Patient 2</p>
-			</a>
-
-			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-				<p>Patient 3</p>
-			</a>
-
-			<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-				<p>Patient 4</p>
-			</a>
-		</nav>
+			<nav>
+				<a href="http://www.gatech.edu/">
+					<img src="http://www.comm.gatech.edu/sites/comm.gatech.edu/files/images/georgiatechlogo-white-675x315.png" style="width:100%">
+				</a>
+	
+				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+					<p>Patient 1</p>
+				</a>
+	
+				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+					<p>Patient 2</p>
+				</a>
+	
+				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+					<p>Patient 3</p>
+				</a>
+	
+				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+					<p>Patient 4</p>
+				</a>
+			</nav>
 		</div>
 		
+		<!-- Section containing JS 3D renderer and collapsible Information panel -->
 		<div id="main">
-		
+			
+			<!-- Load three.JS 3D scene -->
 			<div>
-		      	<p>
-						<script src="{{ url_for('static', filename = 'vendors/threejs/three.js') }}"></script>
-						<script src="{{ url_for('static', filename = 'vendors/threejs/OBJLoader.js') }}"></script>
-						<script src="{{ url_for('static', filename = 'vendors/threejs/JSONLoader.js') }}"></script>
-						<script src="{{ url_for('static', filename = 'vendors/threejs/OrbitControls.js') }}"></script>
-						<script src="{{ url_for('static', filename = 'resources/js/render.js') }}"></script>
-		    	</p>
+				<!-- Load three.JS libraries -->
+				<script src="{{ url_for('static', filename = 'vendors/threejs/three.js') }}"></script>
+				<script src="{{ url_for('static', filename = 'vendors/threejs/OBJLoader.js') }}"></script>
+				<script src="{{ url_for('static', filename = 'vendors/threejs/JSONLoader.js') }}"></script>
+				<script src="{{ url_for('static', filename = 'vendors/threejs/OrbitControls.js') }}"></script>
 				
+				<!-- JS for Project Livermore 3D scene -->
+				<script src="{{ url_for('static', filename = 'resources/js/render.js') }}"></script>
 			</div>
 			
-			
+			<!-- Disease Information Right-hand panel -->
 			<div class="infobox w3-quarter">
-			
-				<button onClick="infoHide('infobar')" class="w3-btn w3-black row btn" title="Click Here to Expand">
+				
+				<!-- Button as header of collapsible information box -->
+				<button onClick="infoHide('infobar')" class="w3-btn w3-black row btn" title="Click to Expand/Collapse">
 					<header class="w3-center">
 		      		<h4><span class="w3-hide-small">Disease</span> Information</h4>
 		        </header>
 				</button>
 				
+				<!-- Disease Information textbox -->
+				<!-- Needs to be made dynamic with data loaded from DB  -->
 				<div class="w3-card w3-black w3-hide w3-content w3-justify w3-text-grey w3-padding-5 row content" id="infobar">
 		     		 <h5 class="w3-text-light-grey">Patient</h5>
 	
@@ -71,14 +77,14 @@
 		     		 <h5 class="w3-text-light-grey">Diagnosis</h5>
 		     		 <p class="w3-wide">Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis Diagnosis this
 		        is your diagnosis Diagnosis this is your diagnosis Diagnosis this is your diagnosis</p>
-	
 				</div>
-			
 			</div>
 			
 		
 		</div>
 		
+		
+		<!-- Load controls for UI elements -->
 		<script src="{{ url_for('static', filename = 'resources/js/interface.js') }}"></script>
 		
 		
