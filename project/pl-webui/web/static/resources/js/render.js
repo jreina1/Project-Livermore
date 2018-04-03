@@ -5,7 +5,7 @@ var windowHalfX = window.innerWidth/2; var windowHalfY = window.innerHeight/2;
 
 // Files to Load
 //var jsonObject = '/static/resources/model/liverhealthy.json';
-var fbxObject = '/static/resources/model/arcade.fbx';
+var fbxObject = '/static/resources/model/liver_fbx_test.fbx';
 
 init(); animate();
 
