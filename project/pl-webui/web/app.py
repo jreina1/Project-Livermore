@@ -17,7 +17,7 @@ def hello_world():
     cur = db.cursor()
 
     # Use all the SQL you like
-    cur.execute("SELECT * FROM patients")
+    cur.execute("SELECT * FROM Patient")
 
     # print all the first cell of all the rows
     data = ""
