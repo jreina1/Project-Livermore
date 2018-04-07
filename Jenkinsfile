@@ -35,7 +35,7 @@ pipeline{
                 //the Jenkins Pipeline, builds a Docker image using the project Dockerfile, and pushes it to the registry
                 //as the latest version.
                 script{
-                    docker.withRegistry('https://apps2.hdap.gatech.edu'){
+                    docker.withRegistry('https://build.hdap.gatech.edu'){
                         def plfhirImage = docker.build("pl-fhir:1.0", "-f project/pl-fhir/Dockerfile project/pl-fhir")
                         plfhirImage.push('latest')
                         def plfhircxnImage = docker.build("pl-fhircxn:1.0", "-f project/pl-fhircxn/Dockerfile project/pl-fhircxn")
@@ -54,10 +54,10 @@ pipeline{
             steps{
                 //Write a script that notifies the Rancher API that the Docker Image for the application has been updated.
                 script{
-                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'https://apps3.hdap.gatech.edu/v2-beta', environmentId: '1a16', environments: '', image: 'apps2.hdap.gatech.edu/pl-fhir:latest', ports: '', service: 'livermore/pl-fhir', timeout: 50
-                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'https://apps3.hdap.gatech.edu/v2-beta', environmentId: '1a16', environments: '', image: 'apps2.hdap.gatech.edu/pl-fhircxn:latest', ports: '', service: 'livermore/pl-fhircxn', timeout: 50
-                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'https://apps3.hdap.gatech.edu/v2-beta', environmentId: '1a16', environments: '', image: 'apps2.hdap.gatech.edu/pl-mysql:latest', ports: '', service: 'livermore/pl-mysql', timeout: 50
-                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'https://apps3.hdap.gatech.edu/v2-beta', environmentId: '1a16', environments: '', image: 'apps2.hdap.gatech.edu/pl-webui:latest', ports: '', service: 'livermore/pl-webui', timeout: 50
+                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'http://rancher.hdap.gatech.edu:8080/v2-beta', environmentId: '1a7', environments: '', image: 'build.hdap.gatech.edu/pl-fhir:latest', ports: '', service: 'livermore/pl-fhir', timeout: 50
+                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'http://rancher.hdap.gatech.edu:8080/v2-beta', environmentId: '1a7', environments: '', image: 'build.hdap.gatech.edu/pl-fhircxn:latest', ports: '', service: 'livermore/pl-fhircxn', timeout: 50
+                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'http://rancher.hdap.gatech.edu:8080/v2-beta', environmentId: '1a7', environments: '', image: 'build.hdap.gatech.edu/pl-mysql:latest', ports: '', service: 'livermore/pl-mysql', timeout: 50
+                    rancher confirm: true, credentialId: 'rancher-server', endpoint: 'http://rancher.hdap.gatech.edu:8080/v2-beta', environmentId: '1a7', environments: '', image: 'build.hdap.gatech.edu/pl-webui:latest', ports: '', service: 'livermore/pl-webui', timeout: 50
                 }
             }
         }
