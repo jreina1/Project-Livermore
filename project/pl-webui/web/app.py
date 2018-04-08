@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/index", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def main():
     
     db = MySQLdb.connect(host="pl-mysql",    # your host, usually localhost
@@ -54,8 +54,8 @@ def main():
                            Patient_first_name = Patient_first_name, 
                            Patient_last_name = Patient_last_name, 
                            Patient_diagnosis= Patient_diagnosis,
-                           Patient_symptoms= Patient_symptoms
-                           Patient_treatment = Patient_treatment
+                           Patient_symptoms= Patient_symptoms,
+                           Patient_treatment = Patient_treatment,
                            Disease_name = Disease_name,
                            Disease_overview= Disease_overview,
                            Disease_symptoms= Disease_symptoms,
