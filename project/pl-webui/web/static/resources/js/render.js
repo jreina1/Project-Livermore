@@ -5,7 +5,7 @@ var windowHalfX = window.innerWidth/2; var windowHalfY = window.innerHeight/2;
 
 // Files to Load
 //var jsonObject = '/static/resources/model/liverhealthy.json';
-var fbxObject = '/static/resources/model/Liver-Healthy.fbx';
+var fbxObject = '/static/resources/model/liver_healthy.fbx';
 
 init(); animate();
 
@@ -16,11 +16,17 @@ function init() {
 
   // Build Scene & Lighting
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xf5f5f5);
+  scene.background = new THREE.Color(0x263238);
 
-  var ambientLight = new THREE.AmbientLight(0xcccccc, 1.5); scene.add(ambientLight);
+//  var ambientLight = new THREE.AmbientLight(0xcccccc, 1.5); scene.add(ambientLight);
   var pointLight = new THREE.PointLight(0xaaaaaa, 0.4); camera.add(pointLight); scene.add(camera);
+    
+  var hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444); hemiLight.position.set(0, 200, 0); scene.add(hemiLight);
 
+  var dirLight = new THREE.DirectionalLight(0xffffff); dirLight.position.set(0, 200, 100); dirLight.castShadow = true;
+  dirLight.shadow.camera.top = 180; dirLight.shadow.camera.bottom = -100; dirLight.shadow.camera.left = -120; dirLight.shadow.camera.right = 120;
+  scene.add(dirLight);
+  
   // Tracking of data
   var manager = new THREE.LoadingManager(); manager.onProgress = function (item, loaded, total) {
     console.log(item, loaded, total);

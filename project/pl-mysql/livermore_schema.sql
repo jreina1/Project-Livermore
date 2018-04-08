@@ -18,6 +18,7 @@ CREATE TABLE Patient (
     Patient_first_name VARCHAR(100) NOT NULL,
     Patient_last_name VARCHAR(100) NOT NULL,
     Patient_snomed_code INT NOT NULL,
+    Patient_diagnosis TEXT NOT NULL,
     Patient_symptoms TEXT NOT NULL,
     Patient_treatment TEXT NOT NULL,
     
