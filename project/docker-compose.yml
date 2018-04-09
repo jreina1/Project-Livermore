@@ -27,8 +27,9 @@ services:
     container_name: pl-fhircxn
     build: ./pl-fhircxn
     links:
-    - pl-mysql
     - pl-fhir
+    - pl-mysql    
+
 
   pl-webui:
     container_name: pl-webui

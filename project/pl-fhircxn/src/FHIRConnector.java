@@ -134,6 +134,9 @@ public class FHIRConnector {
 			
 			FHIRConnector sr = new FHIRConnector(url);
 			
+			System.out.println("****************************");
+			System.out.println("********* PATIENTS *********");
+			System.out.println("****************************");
 			List<String> patientIds = sr.getPatientList();
 			for (String x : patientIds) {
 				System.out.println(x);
