@@ -53,14 +53,19 @@ slider_input.addEventListener("input", function() {
 		
 		if(slider_input.value == 1) {
 			// alert("Placeholder for path_id=2; case=1");
+			switchModel("healthy");
 		} else if(slider_input.value == 34) {
 			// alert("Placeholder for path_id=2; case=34");
+			switchModel("fatty");
 		} else if(slider_input.value == 67) {
 			// alert("Placeholder for path_id=2; case=67");
+			switchModel("fibrosis");
 		} else if(slider_input.value == 100) {
 			// alert("Placeholder for path_id=2; case=100");
+			switchModel("cirrhosis");
 		} else {
-			// alert(slider_input.value);
+			alert("JS Error: This should be unreachable. Slider value: " + slider_input.value);
+			switchModel("healthy");
 		}
 		
 	} else if(path_id == 4) {
@@ -76,6 +81,5 @@ slider_input.addEventListener("input", function() {
 		}
 		
 	}
-	
-	
+
 }, false);
