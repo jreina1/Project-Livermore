@@ -2,9 +2,11 @@ var container;
 var camera, scene, renderer, controls;
 var mouseX = 0, mouseY = 0;
 var windowHalfX = window.innerWidth/2; var windowHalfY = window.innerHeight/2;
+var loader;
 
 // Files to Load
-var fbxObject = '/static/resources/model/liver_healthy.fbx';
+var fbxPath = '/static/resources/model/liver_healthy.fbx';
+var fbxObject = null;
 
 init(); animate();
 
@@ -18,13 +20,13 @@ function init() {
   scene.background = new THREE.Color(0x263238);
 
   var pointLight = new THREE.PointLight(0xaaaaaa, 0.4); camera.add(pointLight); scene.add(camera);
-    
+
   var hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444); hemiLight.position.set(0, 200, 0); scene.add(hemiLight);
 
   var dirLight = new THREE.DirectionalLight(0xffffff); dirLight.position.set(0, 200, 100); dirLight.castShadow = true;
   dirLight.shadow.camera.top = 180; dirLight.shadow.camera.bottom = -100; dirLight.shadow.camera.left = -120; dirLight.shadow.camera.right = 120;
   scene.add(dirLight);
-  
+
   // Tracking of data
   var manager = new THREE.LoadingManager(); manager.onProgress = function (item, loaded, total) {
     console.log(item, loaded, total);
@@ -41,14 +43,10 @@ function init() {
   };
 
   // Load model using FBXLoader
-  var loader = new THREE.FBXLoader(manager);
-  loader.load(fbxObject, function (object) {
-	 scene.add(object); 
-  }, undefined, function (error) {
-	  console.error(error);
-  });
-  
-  renderer = new THREE.WebGLRenderer(); 
+  loader = new THREE.FBXLoader(manager);
+  loadObj(fbxPath);
+
+  renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
@@ -86,25 +84,48 @@ function render() {
 }
 
 function switchModel(model) {
-	
-//	renderer.clear(scene, camera);
-	
-	if(model == "healthy") {
-		fbxObject = '/static/resources/model/liver_healthy.fbx'
-	} else if(model == "fatty") {
-		fbxObject = '/static/resources/model/liver_fatty.fbx'
-	} else if(model == "fibrosis") {
-		fbxObject = '/static/resources/model/liver_fibrosis.fbx'
-	} else if(model == "cirrhosis") {
-		fbxObject = '/static/resources/model/liver_cirrhosis.fbx'
-	} else if(model == "benign") {
-		fbxObject = '/static/resources/model/liver_benigntumor.fbx'
-	} else if(model == "polycystic") {
-		fbxObject = '/static/resources/model/liver_polycystic.fbx'
-	} else {
-		alert("JS Error: This should be unreachable.");
-		fbxObject = '/static/resources/model/liver_healthy.fbx'
+
+	renderer.clear(scene, camera);
+
+	switch(model) {
+		case 'healthy':
+			fbxPath = '/static/resources/model/liver_healthy.fbx';
+			break;
+		case 'fatty':
+			fbxPath = '/static/resources/model/liver_fatty.fbx';
+			break;
+		case 'fibrosis':
+			fbxPath = '/static/resources/model/liver_fibrosis.fbx';
+			break;
+		case 'cirrhosis':
+			fbxPath = '/static/resources/model/liver_cirrhosis.fbx';
+			break;
+		case 'benign':
+			fbxPath = '/static/resources/model/liver_benigntumor.fbx';
+			break;
+		case 'polycystic':
+			fbxPath = '/static/resources/model/liver_polycystic.fbx';
+			break;
+		default:
+			alert("JS Error: This should be unreachable.");
+			fbxPath = '/static/resources/model/liver_healthy.fbx';
 	}
-	
-	init(); animate();
+
+	removeEntity(fbxObject);
+	loadObj(fbxPath);
+}
+
+function loadObj(path) {
+    loader.load(path, function (object) {
+		object.name = "someobj";
+		scene.add(object);
+		fbxObject = object;
+	  }, undefined, function (error) {
+		  console.error(error);
+	  });
+}
+
+function removeEntity(object){
+    var selectedObject = scene.getObjectByName(object.name);
+    scene.remove(selectedObject);
 }
