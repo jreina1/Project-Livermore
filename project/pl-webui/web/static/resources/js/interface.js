@@ -51,33 +51,40 @@ slider_input.addEventListener("input", function() {
 	
 	if(path_id == 2) {
 		
-		if(slider_input.value == 1) {
-			// alert("Placeholder for path_id=2; case=1");
+		switch(slider_input.value) {
+		case '1':
 			switchModel("healthy");
-		} else if(slider_input.value == 34) {
-			// alert("Placeholder for path_id=2; case=34");
+			break;
+		case '34':
 			switchModel("fatty");
-		} else if(slider_input.value == 67) {
-			// alert("Placeholder for path_id=2; case=67");
+			break;
+		case '67':
 			switchModel("fibrosis");
-		} else if(slider_input.value == 100) {
-			// alert("Placeholder for path_id=2; case=100");
+			break;
+		case '100':
 			switchModel("cirrhosis");
-		} else {
-			alert("JS Error: This should be unreachable. Slider value: " + slider_input.value);
+			break;
+		default:
+			console.log("JS Error: This should be unreachable. Slider value: " + slider_input.value);
 			switchModel("healthy");
 		}
 		
 	} else if(path_id == 4) {
 		
-		if(slider_input.value == 0) {
-			// alert("Placeholder for path_id=4; case=0");
-		} else if(slider_input.value == 50) {
-			// alert("Placeholder for path_id=4; case=50");
-		} else if(slider_input.value == 100) {
-			// alert("Placeholder for path_id=4; case=100");
-		} else {
-			// alert(slider_input.value);
+		switch(slider_input.value) {
+		case '0':
+
+			break;
+		case '50':
+
+			break;
+		case '100':
+
+			break;
+		default:
+			console.log("JS Error: This should be unreachable. Slider value: " + slider_input.value);
+			switchModel("healthy");
+	
 		}
 		
 	}
