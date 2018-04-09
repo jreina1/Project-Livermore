@@ -18,20 +18,20 @@
 					<img src="http://www.comm.gatech.edu/sites/comm.gatech.edu/files/images/georgiatechlogo-white-675x315.png" style="width:100%">
 				</a>
 	
-				<a href="javascript:void" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientOne">
-					<p>Patient 1</p>
+				<a href="javascript:void" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientId" name="patientId" value="1">
+					<label for="patient1"><p>Patient 1</label></p>
 				</a>
 	
-				<a href="javascript:void" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientTwo">
-					<p>Patient 2</p>
+				<a href="javascript:void" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientId" name="patientId" value="2">
+					<label for="patient2"><p>Patient 2</label></p>
 				</a>
 	
-				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-					<p>Patient 3</p>
+				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientId" name="patientId" value="3">
+					<label for= "patient3"><p>Patient 3 </label></p>
 				</a>
 	
-				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-					<p>Patient 4</p>
+				<a href="#infobar" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientId" name="patientId" value="4">
+					<label for ="patient4"><p>Patient 4</label></p>
 				</a>
 			</nav>
 		</div>
@@ -68,31 +68,31 @@
 				<!-- Needs to be made dynamic with data loaded from DB  -->
 				<div class="w3-card w3-black w3-content w3-justify w3-text-grey w3-padding-5 row content" id="infobar">
 		     		 <h5 class="w3-text-light-grey">Patient</h5>
-		     		 <p class="w3-wide"><label for="Patient_first_name"> First Name:</label> </p>
--		     		 <p class="w3-wide"><label for="Patient_last_name">Last Name: </label></p>
+		     		 <p class="w3-wide"><label for="Patient_first_name"> First Name: {{Patient_first_name}}</label> </p>
+-		     		 <p class="w3-wide"><label for="Patient_last_name">Last Name: {{Patient_last_name}}</label></p>
 		     		 
 		     		 <h5 class="w3-text-light-grey">Your Symptoms</h5>
--		     		 <p class="w3-wide"><label for="Patient_symptoms"></label></p>
+-		     		 <p class="w3-wide"><label for="Patient_symptoms">{{Patient_symptoms}}</label></p>
 
 		     		 <br>
 -		     		 <h5 class="w3-text-light-grey">Your Diagnosis</h5>
--		     		 <p class="w3-wide"><label for="Patient_diagnosis"></label></p>
+-		     		 <p class="w3-wide"><label for="Patient_diagnosis"> {{Patient_diagnosis}}</label></p>
 
 					<h5 class="w3-text-light-grey">Your Treatment</h5>
--		     		<p class="w3-wide"><label for="Patient_treatment"></label>< </p>
+-		     		<p class="w3-wide"><label for="Patient_treatment">{{Patient_treatment}}</label>< </p>
 		     		 
 		        
 		        	<h4 class="w3-text-light-grey">Advanced Information</h4>
 	
-		     		 <p class="w3-wide"><label for="Disease_name">Disease:</label> </p>
-		     		 <p class="w3-wide"><label for="Disease_overview">Overview: </label></p>
-		     		 <p class="w3-wide"><label for="Disease_symptoms">Symptoms:</label></p>
-		     		 <p class="w3-wide"><label for="Disease_treatment">Treatment:</label> </p>
-		     		 <p class="w3-wide"><label for="Disease_causes">Causes:</label></p>
-		     		 <p class="w3-wide"><label for="Disease_risk_factors">>Risk Factors:</label></p>
-		     		 <p class="w3-wide"><label for="Disease_complications">Complications:</label></p>
-		     		 <p class="w3-wide"><label for="Disease_preventions">Preventions:</label></p>
-		     		 <p class="w3-wide"><label for="Disease_resources">Resources:</label></p>
+		     		 <p class="w3-wide"><label for="Disease_name">Disease: {{Disease_name}}</label> </p>
+		     		 <p class="w3-wide"><label for="Disease_overview">Overview: {{Disease_overview}}</label></p>
+		     		 <p class="w3-wide"><label for="Disease_symptoms">Symptoms:{{Disease_symptoms}}</label></p>
+		     		 <p class="w3-wide"><label for="Disease_treatment">Treatment: {{Disease_treatment}}</label> </p>
+		     		 <p class="w3-wide"><label for="Disease_causes">Causes:</label> {{Disease_causes}}</p>
+		     		 <p class="w3-wide"><label for="Disease_risk_factors">>Risk Factors:{{Disease_risk_factors}}</label></p>
+		     		 <p class="w3-wide"><label for="Disease_complications">Complications: {{Disease_complications}}</label></p>
+		     		 <p class="w3-wide"><label for="Disease_preventions">Preventions: {{Disease_preventions}}</label></p>
+		     		 <p class="w3-wide"><label for="Disease_resources">Resources: {{Disease_resources}}</label></p>
 					 
 				</div>
 			</div>
