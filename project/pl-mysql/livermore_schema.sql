@@ -5,16 +5,16 @@ USE livermore;
 
 
 CREATE TABLE PatientID (
-	Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    Patient_id INT NOT NULL,
+    Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    Patient_id VARCHAR(100) NOT NULL,
     
     PRIMARY KEY (Id),
     KEY (Patient_id)
 );
 
 CREATE TABLE Patient (
-	Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    Patient_id INT NOT NULL,
+    Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    Patient_id VARCHAR(100) NOT NULL,
     Patient_first_name VARCHAR(100) NOT NULL,
     Patient_last_name VARCHAR(100) NOT NULL,
     Patient_snomed_code INT NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE Patient (
 );
 
 CREATE TABLE Disease (
-	Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     Patient_snomed_code INT NOT NULL,
     Disease_name TEXT NOT NULL,
     Disease_overview TEXT NOT NULL,
