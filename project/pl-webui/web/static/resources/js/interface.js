@@ -13,7 +13,8 @@ function updatePatientOne() {
     document.getElementById("diseaseRange").value = "1";
     document.getElementById("diseaseRange").step = "33";
     
-    document.getElementById("slideLabel").innerHTML = "Patient One"
+    document.getElementById("slideLabel").innerHTML = "Patient One";
+    document.getElementById("flaskform").submit();
     	
     path_id = 2;
 	return false;
@@ -28,8 +29,9 @@ function updatePatientTwo() {
     document.getElementById("diseaseRange").value = "0";
     document.getElementById("diseaseRange").step = "50";
     
-    document.getElementById("slideLabel").innerHTML = "Patient Two"
-    	
+    document.getElementById("slideLabel").innerHTML = "Patient Two";
+    document.getElementById("flaskform").submit();
+    
     path_id = 4;
 	return false;
 }
