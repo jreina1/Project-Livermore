@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class DBClient {
@@ -75,7 +77,7 @@ public class DBClient {
 
 		try {
 		    stmt = conn.createStatement();
-		    rs = stmt.executeQuery("SELECT * FROM patients");
+		    rs = stmt.executeQuery("SELECT * FROM Patient");
 
 		    // Now do something with the ResultSet ....
 		    while (rs.next()) {
@@ -116,6 +118,78 @@ public class DBClient {
 		// TODO Auto-generated method stub
 		DBClient db = new DBClient();
 		db.getPatients();
+		
+	}
+	
+	public void insertPatients(List<PatientLiverMore> patientList) {
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		List<String> statements = new ArrayList<String>();
+		//int count=0;
+		for (PatientLiverMore p: patientList) {
+			String statement = "INSERT INTO Patient "
+					+ "(Patient_id,Patient_first_name,"
+					+ "Patient_last_name,"
+					+ "Patient_snomed_code,"
+					+ "Patient_symptoms,"
+					+ "Patient_treatment)"
+					+ "values ("+
+					"'"+p.getPatient_id()+"',"+
+					"'"+p.getPatient_first_name()+"',"+
+					"'"+p.getPatient_last_name()+"',"+
+					"'"+p.getPatient_snomed_code()+"',"+
+					"'"+p.getPatient_symptoms()+"',"+
+					"'"+p.getPatient_treatment()+"'"
+					+")";
+			statements.add(statement);
+
+			
+		}
+		try {
+			for (String s : statements) {
+				
+				stmt = conn.createStatement();
+			    //rs = stmt.executeQuery(s);
+				stmt.executeUpdate(s);
+			}
+		    
+
+		    // Now do something with the ResultSet ....
+		    //while (rs.next()) {
+		    	//System.out.println(rs.getString(2));
+		    //}
+		}
+		catch (SQLException ex){
+		    // handle any errors
+		    System.out.println("SQLException: " + ex.getMessage());
+		    System.out.println("SQLState: " + ex.getSQLState());
+		    System.out.println("VendorError: " + ex.getErrorCode());
+		}
+		finally {
+			System.out.println("Query Executed");
+		    // it is a good idea to release
+		    // resources in a finally{} block
+		    // in reverse-order of their creation
+		    // if they are no-longer needed
+
+		    if (rs != null) {
+		        try {
+		            rs.close();
+		        } catch (SQLException sqlEx) { } // ignore
+
+		        rs = null;
+		    }
+
+		    if (stmt != null) {
+		        try {
+		            stmt.close();
+		        } catch (SQLException sqlEx) { } // ignore
+
+		        stmt = null;
+		    }
+		}		
+		
 		
 	}
 
