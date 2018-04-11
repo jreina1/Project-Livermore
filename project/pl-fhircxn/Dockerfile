@@ -33,4 +33,4 @@ CMD python FHIRHelper.py
 #ADD bin/ /docker-entrypoint-initdb.d
 #RUN chmod -v a+rwx /docker-entrypoint-initdb.d/setupFhirCxn.sh
 
-#RUN sleep 3000
+

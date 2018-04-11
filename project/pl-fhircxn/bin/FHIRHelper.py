@@ -23,17 +23,45 @@ class FHIRHelper(object):
 
     def waitTillReady(self):
         ready = False
-        time.sleep(60)
+#         time.sleep(5)
+        
         while True:
-            if 1==1:
+            avail = self.areServicesAvailable()
+            if avail is True:
                 ready = True
                 break
             time.sleep(1)
+            
+        time.sleep(5)
         return ready
         
+    def areServicesAvailable(self):
+        good = False
+        
+        cmd = "nc -z -v localhost 8080"
+        cmd = "nc -z -v pl-fhir 8080"
+       
+        try:
+            o = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
+        
+            t = o.decode("utf-8")
+        
+            if "open" in t:
+                good = True
+            else:
+                good   = False
+                
+            print "port is good ", good, t
+        except:
+            print "ip not ready yet"
+            
+        return good
         
     def loadFhir(self):
-
+        print "**************************************"
+        print "***** DUMPING PATIENTS INTO FHIR! ****"
+        print "**************************************"
+        
         url = "http://localhost:8080/baseDstu3"
         doclistpath = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/patients"
         logName = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin/log.txt"
@@ -88,10 +116,14 @@ class FHIRHelper(object):
             log.write(str(r))
             
         self.runFhirCxn()
+        
+        print "*******************************************"
+        print "***** DONE DUMPING PATIENTS INTO FHIR! ****"
+        print "*******************************************"        
             
     def runFhirCxn(self):
         
-#         workdir = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin"
+        workdir = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin"
         workdir = "/app/bin"
         cmd = "cd " + workdir + ";java -cp fhirConnector-1.0.jar FHIRConnector"
         
@@ -107,18 +139,17 @@ if __name__ == '__main__':
     
     fh = FHIRHelper() 
     
+    
     while True:
         ready = fh.waitTillReady()
         if ready is True:
             break
-#     fh.loadFhir()
-
-#     Create two threads as follows
+ 
+#     Create thread as follows
     try:
         t = Thread(target=fh.loadFhir(), args=())
-#         fh.runFhirCxn()
     except:
        print "Error: unable to start thread"
     
-#     while 1:
-#        pass    
+    while 1:
+       pass    
