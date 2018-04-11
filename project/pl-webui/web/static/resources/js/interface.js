@@ -14,7 +14,7 @@ function updatePatientOne() {
     document.getElementById("diseaseRange").step = "33";
     
     document.getElementById("slideLabel").innerHTML = "Patient One";
-    document.getElementById("flaskform").submit();
+//    document.getElementById("flaskform").submit();
     	
     path_id = 2;
 	return false;
@@ -30,9 +30,41 @@ function updatePatientTwo() {
     document.getElementById("diseaseRange").step = "50";
     
     document.getElementById("slideLabel").innerHTML = "Patient Two";
-    document.getElementById("flaskform").submit();
+//    document.getElementById("flaskform").submit();
     
     path_id = 4;
+	return false;
+}
+
+var patient_three = document.getElementById('patientThree');
+patient_three.onclick = updatePatientThree;
+
+function updatePatientThree() {
+	document.getElementById("diseaseRange").min = "1";
+    document.getElementById("diseaseRange").max = "100";
+    document.getElementById("diseaseRange").value = "1";
+    document.getElementById("diseaseRange").step = "100";
+    
+    document.getElementById("slideLabel").innerHTML = "Patient Three";
+    //document.getElementById("flaskform").submit();
+    
+    path_id = 6;
+	return false;
+}
+
+var patient_four = document.getElementById('patientFour');
+patient_four.onclick = updatePatientFour;
+
+function updatePatientFour() {
+	document.getElementById("diseaseRange").min = "1";
+    document.getElementById("diseaseRange").max = "100";
+    document.getElementById("diseaseRange").value = "1";
+    document.getElementById("diseaseRange").step = "100";
+    
+    document.getElementById("slideLabel").innerHTML = "Patient Four";
+    //document.getElementById("flaskform").submit();
+    
+    path_id = 8;
 	return false;
 }
 
@@ -55,15 +87,19 @@ slider_input.addEventListener("input", function() {
 		
 		switch(slider_input.value) {
 		case '1':
+			console.log("path_id: " + path_id + "; case: healthy");
 			switchModel("healthy");
 			break;
 		case '34':
+			console.log("path_id: " + path_id + "; case: fatty");
 			switchModel("fatty");
 			break;
 		case '67':
+			console.log("path_id: " + path_id + "; case: fibrosis");
 			switchModel("fibrosis");
 			break;
 		case '100':
+			console.log("path_id: " + path_id + "; case: cirrhosis");
 			switchModel("cirrhosis");
 			break;
 		default:

@@ -48,8 +48,8 @@ def main():
         data = ""
         for row in cur.fetchall():
             
-            Patient_first_name= row[0]
-            Patient_last_name= row[1]
+            Patient_first_name= "Hello"
+            Patient_last_name= "World"
             Patient_diagnosis= row[2]
             Patient_symptoms= row[3]
             Patient_treatment= row[4]
