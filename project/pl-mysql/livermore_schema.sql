@@ -6,7 +6,7 @@ USE livermore;
 
 CREATE TABLE PatientID (
     Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    Patient_id INT NOT NULL,
+    Patient_id VARCHAR(100) NOT NULL,
     
     PRIMARY KEY (Id),
     KEY (Patient_id)
@@ -14,7 +14,7 @@ CREATE TABLE PatientID (
 
 CREATE TABLE Patient (
     Id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    Patient_id INT NOT NULL,
+    Patient_id VARCHAR(100) NOT NULL,
     Patient_first_name VARCHAR(100) NOT NULL,
     Patient_last_name VARCHAR(100) NOT NULL,
     Patient_snomed_code INT NOT NULL,
@@ -22,8 +22,8 @@ CREATE TABLE Patient (
     Patient_symptoms TEXT NOT NULL,
     Patient_treatment TEXT NOT NULL,
     
-    PRIMARY KEY (Patient_id),
-    KEY (Id)
+    PRIMARY KEY (Id),
+    KEY (Patient_id)
 
 );
 
@@ -45,6 +45,8 @@ CREATE TABLE Disease (
 );
 
 /* constraint patient id --> patient */
+/*
 ALTER TABLE Patient
 	ADD CONSTRAINT fk_Patient_Id_PatientID_Id FOREIGN KEY (Id) REFERENCES PatientID (Id);
+*/
    
