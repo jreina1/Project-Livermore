@@ -1,88 +1,195 @@
 
-
 // Identify disease path state
 var path_id = 0;
 
 // Patient Navigation
-var patient_one = document.getElementById('patientOne');
-patient_one.onclick = updatePatientOne;
-
-function updatePatientOne() {
-	document.getElementById("diseaseRange").min = "1";
-    document.getElementById("diseaseRange").max = "100";
-    document.getElementById("diseaseRange").value = "1";
-    document.getElementById("diseaseRange").step = "33";
-    
-    document.getElementById("slideLabel").innerHTML = "Patient One";
-//    document.getElementById("flaskform").submit();
-    	
-    path_id = 2;
-	return false;
-}
-
-var patient_two = document.getElementById('patientTwo');
-patient_two.onclick = updatePatientTwo;
-
-function updatePatientTwo() {
-	document.getElementById("diseaseRange").min = "0";
-    document.getElementById("diseaseRange").max = "100";
-    document.getElementById("diseaseRange").value = "0";
-    document.getElementById("diseaseRange").step = "50";
-    
-    document.getElementById("slideLabel").innerHTML = "Patient Two";
-//    document.getElementById("flaskform").submit();
-    
-    path_id = 4;
-	return false;
-}
-
-var patient_three = document.getElementById('patientThree');
-patient_three.onclick = updatePatientThree;
-
-function updatePatientThree() {
-	document.getElementById("diseaseRange").min = "0";
-    document.getElementById("diseaseRange").max = "100";
-    document.getElementById("diseaseRange").value = "0";
-    document.getElementById("diseaseRange").step = "50";
-    
-    document.getElementById("slideLabel").innerHTML = "Patient Three";
-    //document.getElementById("flaskform").submit();
-    
-    path_id = 6;
-	return false;
-}
-
-var patient_four = document.getElementById('patientFour');
-patient_four.onclick = updatePatientFour;
-
-function updatePatientFour() {
-	document.getElementById("diseaseRange").min = "0";
-    document.getElementById("diseaseRange").max = "100";
-    document.getElementById("diseaseRange").value = "0";
-    document.getElementById("diseaseRange").step = "50";
-    
-    document.getElementById("slideLabel").innerHTML = "Patient Four";
-    //document.getElementById("flaskform").submit();
-    
-    path_id = 8;
-	return false;
-}
-
-var patient_five = document.getElementById('patientFive');
-patient_five.onclick = updatePatientFive;
-
-function updatePatientFive() {
-	document.getElementById("diseaseRange").min = "0";
-    document.getElementById("diseaseRange").max = "100";
-    document.getElementById("diseaseRange").value = "0";
-    document.getElementById("diseaseRange").step = "50";
-    
-    document.getElementById("slideLabel").innerHTML = "Patient Five";
-    //document.getElementById("flaskform").submit();
-    
-    path_id = 10;
-	return false;
-}
+$(document).ready(function() {
+	
+	$("#patientOne").click(function() {
+		
+		var patient = $(this).attr("value");
+		
+		req = $.ajax({
+			url : '/update',
+			type : 'POST',
+			data : { patientId : patient }
+		});
+		
+		req.done(function(data) {
+			$("#Patient_first_name").text(data.Patient_first_name);
+			$("#Patient_last_name").text(data.Patient_last_name);
+			$("#Patient_diagnosis").text(data.Patient_diagnosis);
+			$("#Patient_symptoms").text(data.Patient_symptoms);
+			$("#Patient_treatment").text(data.Patient_treatment);
+			$("#Disease_name").text(data.Disease_name);
+			$("#Disease_overview").text(data.Disease_overview);
+			$("#Disease_symptoms").text(data.Disease_symptoms);
+			$("#Disease_treatment").text(data.Disease_treatment);
+			$("#Disease_causes").text(data.Disease_causes);
+			$("#Disease_risk_factors").text(data.Disease_risk_factors);
+			$("#Disease_complications").text(data.Disease_complications);
+			$("#Disease_preventions").text(data.Disease_preventions);
+			$("#Disease_resources").text(data.Disease_resources);
+		});
+		
+		$("#diseaseRange").prop('min', 1);
+		$("#diseaseRange").prop('max', 100);
+		$("#diseaseRange").prop('value', 1);
+		$("#diseaseRange").prop('step', 33);
+		
+		$("#slideLabel").html("Patient One");
+		
+		path_id = 2;
+	});
+	
+	$("#patientTwo").click(function() {
+		
+		var patient = $(this).attr("value");
+		
+		req = $.ajax({
+			url : '/update',
+			type : 'POST',
+			data : { patientId : patient }
+		});
+		
+		req.done(function(data) {
+			$("#Patient_first_name").text(data.Patient_first_name);
+			$("#Patient_last_name").text(data.Patient_last_name);
+			$("#Patient_diagnosis").text(data.Patient_diagnosis);
+			$("#Patient_symptoms").text(data.Patient_symptoms);
+			$("#Patient_treatment").text(data.Patient_treatment);
+			$("#Disease_name").text(data.Disease_name);
+			$("#Disease_overview").text(data.Disease_overview);
+			$("#Disease_symptoms").text(data.Disease_symptoms);
+			$("#Disease_treatment").text(data.Disease_treatment);
+			$("#Disease_causes").text(data.Disease_causes);
+			$("#Disease_risk_factors").text(data.Disease_risk_factors);
+			$("#Disease_complications").text(data.Disease_complications);
+			$("#Disease_preventions").text(data.Disease_preventions);
+			$("#Disease_resources").text(data.Disease_resources);
+		});
+		
+		$("#diseaseRange").prop('min', 1);
+		$("#diseaseRange").prop('max', 100);
+		$("#diseaseRange").prop('value', 1);
+		$("#diseaseRange").prop('step', 33);
+		
+		$("#slideLabel").html("Patient Two");
+		
+		path_id = 4;
+	});
+	
+	$("#patientThree").click(function() {
+		
+		var patient = $(this).attr("value");
+		
+		req = $.ajax({
+			url : '/update',
+			type : 'POST',
+			data : { patientId : patient }
+		});
+		
+		req.done(function(data) {
+			$("#Patient_first_name").text(data.Patient_first_name);
+			$("#Patient_last_name").text(data.Patient_last_name);
+			$("#Patient_diagnosis").text(data.Patient_diagnosis);
+			$("#Patient_symptoms").text(data.Patient_symptoms);
+			$("#Patient_treatment").text(data.Patient_treatment);
+			$("#Disease_name").text(data.Disease_name);
+			$("#Disease_overview").text(data.Disease_overview);
+			$("#Disease_symptoms").text(data.Disease_symptoms);
+			$("#Disease_treatment").text(data.Disease_treatment);
+			$("#Disease_causes").text(data.Disease_causes);
+			$("#Disease_risk_factors").text(data.Disease_risk_factors);
+			$("#Disease_complications").text(data.Disease_complications);
+			$("#Disease_preventions").text(data.Disease_preventions);
+			$("#Disease_resources").text(data.Disease_resources);
+		});
+		
+		$("#diseaseRange").prop('min', 1);
+		$("#diseaseRange").prop('max', 100);
+		$("#diseaseRange").prop('value', 1);
+		$("#diseaseRange").prop('step', 33);
+		
+		$("#slideLabel").html("Patient Three");
+		
+		path_id = 6;
+	});
+	
+	$("#patientFour").click(function() {
+		
+		var patient = $(this).attr("value");
+		
+		req = $.ajax({
+			url : '/update',
+			type : 'POST',
+			data : { patientId : patient }
+		});
+		
+		req.done(function(data) {
+			$("#Patient_first_name").text(data.Patient_first_name);
+			$("#Patient_last_name").text(data.Patient_last_name);
+			$("#Patient_diagnosis").text(data.Patient_diagnosis);
+			$("#Patient_symptoms").text(data.Patient_symptoms);
+			$("#Patient_treatment").text(data.Patient_treatment);
+			$("#Disease_name").text(data.Disease_name);
+			$("#Disease_overview").text(data.Disease_overview);
+			$("#Disease_symptoms").text(data.Disease_symptoms);
+			$("#Disease_treatment").text(data.Disease_treatment);
+			$("#Disease_causes").text(data.Disease_causes);
+			$("#Disease_risk_factors").text(data.Disease_risk_factors);
+			$("#Disease_complications").text(data.Disease_complications);
+			$("#Disease_preventions").text(data.Disease_preventions);
+			$("#Disease_resources").text(data.Disease_resources);
+		});
+		
+		$("#diseaseRange").prop('min', 1);
+		$("#diseaseRange").prop('max', 100);
+		$("#diseaseRange").prop('value', 1);
+		$("#diseaseRange").prop('step', 33);
+		
+		$("#slideLabel").html("Patient Four");
+		
+		path_id = 8;
+	});
+	
+	$("#patientFive").click(function() {
+		
+		var patient = $(this).attr("value");
+		
+		req = $.ajax({
+			url : '/update',
+			type : 'POST',
+			data : { patientId : patient }
+		});
+		
+		req.done(function(data) {
+			$("#Patient_first_name").text(data.Patient_first_name);
+			$("#Patient_last_name").text(data.Patient_last_name);
+			$("#Patient_diagnosis").text(data.Patient_diagnosis);
+			$("#Patient_symptoms").text(data.Patient_symptoms);
+			$("#Patient_treatment").text(data.Patient_treatment);
+			$("#Disease_name").text(data.Disease_name);
+			$("#Disease_overview").text(data.Disease_overview);
+			$("#Disease_symptoms").text(data.Disease_symptoms);
+			$("#Disease_treatment").text(data.Disease_treatment);
+			$("#Disease_causes").text(data.Disease_causes);
+			$("#Disease_risk_factors").text(data.Disease_risk_factors);
+			$("#Disease_complications").text(data.Disease_complications);
+			$("#Disease_preventions").text(data.Disease_preventions);
+			$("#Disease_resources").text(data.Disease_resources);
+		});
+		
+		$("#diseaseRange").prop('min', 1);
+		$("#diseaseRange").prop('max', 100);
+		$("#diseaseRange").prop('value', 1);
+		$("#diseaseRange").prop('step', 33);
+		
+		$("#slideLabel").html("Patient Five");
+		
+		path_id = 10;
+	});
+});
 
 
 // Hide or Show the Disease Information panel
