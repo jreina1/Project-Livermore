@@ -38,7 +38,7 @@ class FHIRHelper(object):
     def areServicesAvailable(self):
         good = False
         
-        cmd = "nc -z -v localhost 8080"
+#         cmd = "nc -z -v localhost 8080"
         cmd = "nc -z -v pl-fhir 8080"
        
         try:
@@ -46,7 +46,7 @@ class FHIRHelper(object):
         
             t = o.decode("utf-8")
         
-            if "open" in t:
+            if "open" in t or "succeed" in t:
                 good = True
             else:
                 good   = False
@@ -57,7 +57,7 @@ class FHIRHelper(object):
             
         return good
         
-    def loadFhir(self):
+    def loadFhirO(self):
         print "**************************************"
         print "***** DUMPING PATIENTS INTO FHIR! ****"
         print "**************************************"
@@ -120,6 +120,32 @@ class FHIRHelper(object):
         print "*******************************************"
         print "***** DONE DUMPING PATIENTS INTO FHIR! ****"
         print "*******************************************"        
+  
+    def loadFhir2(self):
+        from fhirclient import client        
+        import fhirclient.models.patient as p
+        import fhirclient.models.bundle as b
+        
+        readEx = "http://localhost:8080/read?serverId=home&pretty=true&resource=Patient&action=read&id=01285e37-86c4-431c-a931-a477ba94dc6d&vid=1"
+        
+        settings = {
+            'app_id': 'fhirhelper',
+            'api_base': 'http://localhost:8080/baseDstu3'
+        }
+        
+        smart = client.FHIRClient(settings=settings)
+        
+        patient = p.Patient.read('01285e37-86c4-431c-a931-a477ba94dc6d', smart.server)
+        print(patient.birthDate.isostring)
+        print(smart.human_name(patient.name[0]))
+        
+
+        
+#         onepat = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/patients/Yost_Darleen_69.json"
+#         with open(onepat, 'r') as h:
+#             pjs = json.load(h)
+#             patient = p.Patient(pjs)
+#             patient.name[0].given
             
     def runFhirCxn(self):
         
@@ -134,22 +160,43 @@ class FHIRHelper(object):
         t = t.strip("\n")
         
         print t
+        
+    def loadFhir(self):
+        
+#         workdir = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin"
+        
+        cmd = "cd /app/tag-uploader;"
+        cmd += "node . --silent -d ../patients -S http://pl-fhir:8080/baseDstu3"
+        
+        o = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
+        
+        t = o.decode("utf-8")
+        
+        t = t.strip("\n")
+        
+        print t            
+        
+        time.sleep(5)
+        
+        self.runFhirCxn()
+   
     
 if __name__ == '__main__':
     
     fh = FHIRHelper() 
     
-    
+        
     while True:
         ready = fh.waitTillReady()
         if ready is True:
             break
- 
+  
 #     Create thread as follows
     try:
         t = Thread(target=fh.loadFhir(), args=())
     except:
        print "Error: unable to start thread"
-    
+     
+     
     while 1:
        pass    
