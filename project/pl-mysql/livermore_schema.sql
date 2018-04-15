@@ -40,13 +40,16 @@ CREATE TABLE Disease (
     Disease_preventions TEXT,
     Disease_resources TEXT,
     
-    PRIMARY KEY (Id)
+    PRIMARY KEY (Patient_snomed_code),
+    KEY (Id)
 
 );
 
 /* constraint patient id --> patient */
-/*
-ALTER TABLE Patient
-	ADD CONSTRAINT fk_Patient_Id_PatientID_Id FOREIGN KEY (Id) REFERENCES PatientID (Id);
-*/
+*
+ALTER TABLE Disease
+	ADD CONSTRAINT fk_Id_Disease_Id FOREIGN KEY (Id) REFERENCES PatientID (Id);
+
+
+
    
