@@ -1,3 +1,5 @@
+THREE.Cache.enabled = true;
+
 var container;
 var camera, scene, renderer, controls;
 var mouseX = 0, mouseY = 0;
@@ -28,7 +30,8 @@ function init() {
   scene.add(dirLight);
 
   // Tracking of data
-  var manager = new THREE.LoadingManager(); manager.onProgress = function (item, loaded, total) {
+  var manager = new THREE.LoadingManager(); 
+  manager.onProgress = function (item, loaded, total) {
     console.log(item, loaded, total);
   };
 
