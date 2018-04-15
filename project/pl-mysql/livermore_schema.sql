@@ -46,9 +46,10 @@ CREATE TABLE Disease (
 );
 
 /* constraint patient id --> patient */
-*
+/*
 ALTER TABLE Disease
 	ADD CONSTRAINT fk_Id_Disease_Id FOREIGN KEY (Id) REFERENCES PatientID (Id);
+*/
 
 
 
