@@ -7,7 +7,17 @@ public class PatientLiverMore {
 	private String Patient_symptoms;
 	private String Patient_treatment;
 	private String Patient_snomed_code;
+	private String Patient_diagnosis;
 
+	public String getPatient_diagnosis() {
+		return Patient_diagnosis;
+	}
+	public void setPatient_diagnosis(String patient_diagnosis) {
+		//if (patient_diagnosis.contains("'")) {
+		patient_diagnosis=patient_diagnosis.replace("'", "");
+			//}
+		Patient_diagnosis = patient_diagnosis;
+	}
 	public String getPatient_id() {
 		return Patient_id;
 	}

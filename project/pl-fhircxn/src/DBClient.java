@@ -132,6 +132,7 @@ public class DBClient {
 					+ "(Patient_id,Patient_first_name,"
 					+ "Patient_last_name,"
 					+ "Patient_snomed_code,"
+					+ "Patient_diagnosis,"
 					+ "Patient_symptoms,"
 					+ "Patient_treatment)"
 					+ "values ("+
@@ -139,9 +140,11 @@ public class DBClient {
 					"'"+p.getPatient_first_name()+"',"+
 					"'"+p.getPatient_last_name()+"',"+
 					"'"+p.getPatient_snomed_code()+"',"+
+					"'"+p.getPatient_diagnosis()+"',"+
 					"'"+p.getPatient_symptoms()+"',"+
 					"'"+p.getPatient_treatment()+"'"
 					+")";
+			System.out.println(statement);
 			statements.add(statement);
 
 			

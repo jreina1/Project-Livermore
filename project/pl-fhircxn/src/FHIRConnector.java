@@ -111,16 +111,19 @@ public class FHIRConnector {
                   .execute();
         List<BundleEntryComponent> sympts = symptomResults.getEntry();
         if (sympts.isEmpty()) {
+        	System.out.println("Symptoms: Data Not Found");
             patient.setPatient_symptoms("Data Not Found");
             return;
         }
         Encounter encounter = (Encounter) sympts.get(0).getResource();
         if (encounter.getReason().isEmpty()) {
+        	System.out.println("Symptoms: Data Not Found");
             patient.setPatient_symptoms("Data Not Found");
             return;
         }
         
         if ((encounter.getReason().get(0).getCoding()).isEmpty()) {
+        	System.out.println("Symptoms: Data Not Found");
             patient.setPatient_symptoms("Data Not Found");
             return;
         }
@@ -149,7 +152,9 @@ public class FHIRConnector {
         patient.setPatient_snomed_code(condition.getCode().getCoding().get(0).getCode());
        
         System.out.println("Condition: "+condition.getCode().getCoding().get(0).getDisplay());
+        patient.setPatient_diagnosis(condition.getCode().getCoding().get(0).getDisplay());
         System.out.println("Snomed Code: "+condition.getCode().getCoding().get(0).getCode());
+        System.out.println("=================================================================");
     }
 
     public void getPatientTreatment(PatientLiverMore patient,String pID) {
