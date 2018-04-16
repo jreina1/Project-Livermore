@@ -93,32 +93,36 @@ function switchModel(model) {
 	switch(model) {
 		case 'healthy':
 			fbxPath = '/static/resources/model/liver_healthy.fbx';
-			document.getElementById("slideLabel").innerHTML = "Healthy Liver"
+			document.getElementById("slideDisease").innerHTML = "Healthy Liver"
 			break;
 		case 'fatty':
 			fbxPath = '/static/resources/model/liver_fatty.fbx';
-			document.getElementById("slideLabel").innerHTML = "Fatty Liver Disease"
+			document.getElementById("slideDisease").innerHTML = "Fatty Liver Disease"
 			break;
 		case 'fibrosis':
 			fbxPath = '/static/resources/model/liver_fibrosis.fbx';
-			document.getElementById("slideLabel").innerHTML = "Liver Fibrosis"
+			document.getElementById("slideDisease").innerHTML = "Liver Fibrosis"
 			break;
 		case 'cirrhosis':
 			fbxPath = '/static/resources/model/liver_cirrhosis.fbx';
-			document.getElementById("slideLabel").innerHTML = "Liver Cirrhosis"
+			document.getElementById("slideDisease").innerHTML = "Liver Cirrhosis"
 			break;
 		case 'benign':
 			fbxPath = '/static/resources/model/liver_benigntumor.fbx';
-			document.getElementById("slideLabel").innerHTML = "Benign Tumors"
+			document.getElementById("slideDisease").innerHTML = "Benign Tumors"
 			break;
 		case 'polycystic':
 			fbxPath = '/static/resources/model/liver_polycystic.fbx';
-			document.getElementById("slideLabel").innerHTML = "Polycystic Liver"
+			document.getElementById("slideDisease").innerHTML = "Polycystic Liver"
+			break;
+		case 'cancer':
+			fbxPath = '/static/resources/model/liver_cancer.fbx';
+			document.getElementById("slideDisease").innerHTML = "Liver Cancer"
 			break;
 		default:
 			console.log("JS Error: This should be unreachable.");
 			fbxPath = '/static/resources/model/liver_healthy.fbx';
-			document.getElementById("slideLabel").innerHTML = "Healthy Liver"
+			document.getElementById("slideDisease").innerHTML = "Healthy Liver"
 	}
 
 	removeEntity(fbxObject);

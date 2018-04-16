@@ -32,6 +32,10 @@ body {
 	font-size: 10px;
 }
 
+.p-warn {
+	font-size: 10px;
+}
+
 .w3-row-padding img {
   margin-bottom: 12px
 }
@@ -76,7 +80,7 @@ body {
 	/*left: 50%;*/
 	/*transform: translateX(-50%);*/
 	/* margin: 0 auto; */
-	height: 75px;
+	height: 100px;
 	width: 300px;
 	padding: 10px;
 }
