@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<title>Project Livermore - Prototype</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'resources/css/style.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+body {background: black;}
+div.a {
+    margin-left: 220px;
+}
+
+.indented {
+  padding-left: 30pt;
+  padding-right: 30pt;
+}
+
+
+
+</style>
+	<body>
+	
+		<!-- <audio controls autoplay>
+  			<source src="/static/resources/Audio/ambient.mp3" type="audio/mpeg">
+		</audio>  -->
+		
+		<!-- Left-hand Patient Navigation Bar -->
+		<div class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black" >
+			<nav>
+			
+					<a href="http://www.gatech.edu/">
+						<img src="http://www.comm.gatech.edu/sites/comm.gatech.edu/files/images/georgiatechlogo-white-675x315.png" style="width:100%">
+					</a>
+		
+					<a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientOne" name="patientId" value="1">
+						<label for="patient1"><p>Patient 1</label></p>
+					</a>
+		
+					<a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientTwo" name="patientId" value="2">
+						<label for="patient2"><p>Patient 2</label></p>
+					</a>
+		
+					<a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientThree" name="patientId" value="3">
+						<label for= "patient3"><p>Patient 3 </label></p>
+					</a>
+		
+					<a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white" id="patientFour" name="patientId" value="4">
+						<label for ="patient4"><p>Patient 4</label></p>
+					</a>
+					
+					<a href="help" class="w3-bar-item w3-button w3-padding-large w3-hover-white"><p>Help</label></p>
+					</a> 
+				
+			</nav>
+		</div>
+		<div class="w3-black body a"> 
+      		<h1>Welcome to Project Livermore</h1>
+      		<p> Project Livermore is a development project intended to address the issue of providing patients with timely and engaging educational materials consistent with a diagnosis they may have received. This project is a prototype intended to facilitate the dissemination of educational materials by providing a standards-based inter-operable tool that can plug into a provider patient management system that makes it easier for the physician to send the information to the patient and make it more possible to make patient education a priority.  </p>
+      		<p>This tool is primarily meant to support patient education by providing a 3D visualization of the organ affected per their diagnosis with the ability to manipulate the model in 3D Space. The patient is also able to visualize the disease path progression should they not adhere to treatment or view their organ in a healthy state. In addition, Project Livermore also provides advanced text explanations per the 3D model being viewed with additional link out resources to scientific organizations for more information. </p>
+      		<hr>
+      <h3><b>Help Section</b></h3>
+      <h4><i>> Q: My liver takes too long to load!</i></h4>
+		 <p class="indented"> A: Please be patient, your liver will load soon! </p>
+	  <h4><i>> Q: Why livers?</i></h4>
+		 <p class="indented"> A: Who doesn't love their liver? They're awesome! </p>
+	  <h4><i>> Q: How is the UI designed?</i></h4>
+		 <p class="indented"> A: This application is composed of 3 parts: The navigation panel, the main 3D Model viewing window, and the Disease Information panel. There is also a slider in the 3D Model viewing window used to toggle between different liver disease states. </p>
+	  <h4><i>> Q: The Disease Information column cuts off my model ):</i></h4>
+		 <p class="indented"> A: The Disease Information panel is designed to be collapsible- give it a try!</p>
+	  <h4><i>> Q: How do I use this application?</i></h4>
+		 <p class="indented"> A: Using the application is simple: First you select a patient from the list provided in the navigation panel. The model will load according to the patient's diagnosis. The Disease Information panel will load the patient's name, symptoms and treatment, and the Advanced Information section will display additional educational material consistent with the model displayed. </p>
+      <h4><i>> Q: How do I view the patient's disease progression?</i></h4>
+		 <p class="indented"> A: Viewing of different liver models is achieved through the slider on the bottom left hand corner of the 3D Model viewing window. By default, the slider will position itself according to the patient's diagnosis. Moving the slider to the left will render livers at a healthier state, while moving the slider to the right will render livers at increasingly unhealthy states. </p>
+  	  <h4><i>> Q: How is this useful for patient education?</i></h4>
+		 <p class="indented"> A: Studies show that 3D Models, both in a virtual and printed state, have been significantly useful for patient education. Interventions aimed at increasing patient knowledge have also been shown to improve treatment outcomes of many different acute and chronic illnesses(Dreeben, 2010). In addition, hospital education staff have reported difficulty in finding quality patient resources (Ritsema, 2014), with some education specialists reporting the need to simplify instructional documents in a way that is understandable to patients of different backgrounds (Ravindranath M, 2013). Visual representations of anatomy have been shown to increase patient understanding of basic anatomy, physiology, planned surgical procedures and surgical risks and has enhanced patient adherence to treatment (Yang et. al, 2018). </p>
+  	  <h4><i>> Q: That's cool! Do you have any other resources I can check out?</i></h4>
+		 <p class="indented"> A: Absolutely! </p>
+		 <p class="indented"> 1. Dreeben, O. (2010). Chapter 1: Basic Concepts of Patient Education. In Patient Education in Rehabilitation. Sudbury: Jones and Bartlett. Retrieved February 11, 2018 from https://www.jblearning.com/samples/0763755443/55447_CH01_Dreeben.pd </p>
+		 <p class="indented"> 2. Ravindranath, M. (2013, April 08). Turning medical jargon into plain language. Retrieved January 27, 2018, from https://www.washingtonpost.com/business/on-small-business/turning-medical-jargon-into-plainlanguage/2013/04/05/3a248fb2-9e37-11e2-a2db-efc5298a95e1_story.html?utm_term=.ae187f256adc </p>
+		 <p class="indented"> 3. Ritsema TS, Bingenheimer JB, Scholting P, Cawley JF. Differences in the Delivery of Health Education to Patients With Chronic Disease by Provider Type, 2005–2009. Prev Chronic Dis (2014). 11:130175. DOI: http://dx.doi.org/10.5888/pcd11.130175. Retrieved February 11, 2018 from https://www.cdc.gov/pcd/issues/2014/13_0175.htm </p>
+  		 <p class="indented"> 4.Yang, Tianyou, et al. "The impact of using three-dimensional printed liver models for patient education." Journal of International Medical Research (2018): 0300060518755267. </p>
+  
+      	
+    </div>
+    	
+
+		
+		
+		
+		
+		<!-- Load controls for UI elements -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		
+	</body>
+</html>
