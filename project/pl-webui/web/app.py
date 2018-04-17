@@ -115,5 +115,9 @@ def update_Disease():
                     'Disease_preventions' : Disease_preventions,
                     'Disease_resources' : Disease_resources})
 
+@app.route('/help', methods=['GET', 'POST'])
+def help():
+    return render_template('help.html')
+
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0')
