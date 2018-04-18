@@ -2,9 +2,9 @@
     "type": "collection",
     "entry": [
         {
-            "fullUrl": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac",
+            "fullUrl": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui",
             "resource": {
-                "id": "67eba314-7595-431c-9d62-8d30e0bd76ac",
+                "id": "67eba314-7595-431c-9d62-8d30e0bd86ui",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-PersonOfRecord"
@@ -207,9 +207,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d1c2a100-5aba-4f0d-a3a7-624a65ed4ecd",
+            "fullUrl": "urn:uuid:d1c2a100-5aba-4f0d-a3a7-624a65ed4ecu",
             "resource": {
-                "id": "d1c2a100-5aba-4f0d-a3a7-624a65ed4ecd",
+                "id": "d1c2a100-5aba-4f0d-a3a7-624a65ed4ecu",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-Organization"
@@ -238,9 +238,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411",
+            "fullUrl": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675",
             "resource": {
-                "id": "e13a28cc-17ca-46ca-834e-917e4cd0a411",
+                "id": "e13a28cc-17ca-46ca-834e-917e4cd0a675",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-encounter-Encounter"
@@ -268,14 +268,23 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "period": {
                     "start": "1981-08-02T03:17:54-04:00",
                     "end": "1981-08-02T03:32:54-04:00"
                 },
+                "reason": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "21522001",
+                            "display": "Abdominal pain"
+                        }
+                    ]
+                },
                 "serviceProvider": {
-                    "reference": "urn:uuid:d1c2a100-5aba-4f0d-a3a7-624a65ed4ecd"
+                    "reference": "urn:uuid:d1c2a100-5aba-4f0d-a3a7-624a65ed4ecu"
                 },
                 "resourceType": "Encounter"
             }
@@ -308,10 +317,10 @@
                     "text": "Malignant neoplasm of liver (disorder)"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "onsetDateTime": "1951-12-07T23:40:52-05:00",
                 "assertedDate": "1951-12-07",
@@ -346,10 +355,10 @@
                     "text": "Malignant neoplasm of liver (disorder)"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "onsetDateTime": "1980-09-29T21:19:19-04:00",
                 "assertedDate": "1980-09-29",
@@ -384,10 +393,10 @@
                     "text": "Malignant neoplasm of liver (disorder)"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "onsetDateTime": "1980-10-08T13:10:08-04:00",
                 "assertedDate": "1980-10-08",
@@ -422,10 +431,10 @@
                     "text": "Malignant neoplasm of liver (disorder)"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "onsetDateTime": "1980-10-10T13:03:17-04:00",
                 "assertedDate": "1980-10-10",
@@ -433,9 +442,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6e",
+            "fullUrl": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6t",
             "resource": {
-                "id": "10dd22ac-2f7e-4008-971a-db6dc2710b6e",
+                "id": "10dd22ac-2f7e-4008-971a-db6dc2710b6t",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-problem-Problem"
@@ -460,10 +469,10 @@
                     "text": "Malignant neoplasm of liver (disorder)"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "onsetDateTime": "1981-02-26T02:46:04-05:00",
                 "assertedDate": "1981-02-26",
@@ -506,10 +515,10 @@
                     "text": "Cause of Death [US Standard Certificate of Death]"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "effectiveDateTime": "1981-08-02T03:17:54-04:00",
                 "issued": "1981-08-02T03:17:54-04:00",
@@ -552,10 +561,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "effectiveDateTime": "1981-08-02T03:17:54-04:00",
                 "issued": "1981-08-02T03:17:54-04:00",
@@ -583,10 +592,10 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "period": {
                     "start": "1980-10-10"
@@ -624,16 +633,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:0fada7e6-00ca-436f-b904-14909ca3dc4b",
+            "fullUrl": "urn:uuid:0fada7e6-00ca-436f-b904-14909ca3dc47",
             "resource": {
-                "id": "0fada7e6-00ca-436f-b904-14909ca3dc4b",
+                "id": "0fada7e6-00ca-436f-b904-14909ca3dc47",
                 "status": "in-progress",
                 "description": {
                     "text": "Removal of Liver"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6e"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6t"
                     }
                 ],
                 "resourceType": "Goal",
@@ -648,16 +657,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:68e6b8aa-e73a-414a-ac33-2cd6aa9f111f",
+            "fullUrl": "urn:uuid:68e6b8aa-e73a-414a-ac33-2cd6aa9f111h",
             "resource": {
-                "id": "68e6b8aa-e73a-414a-ac33-2cd6aa9f111f",
+                "id": "68e6b8aa-e73a-414a-ac33-2cd6aa9f111h",
                 "status": "in-progress",
                 "description": {
                     "text": "Let the patient be aware of not drinking alcohol"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6e"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6t"
                     }
                 ],
                 "resourceType": "Goal",
@@ -672,16 +681,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:9965d8e5-9c6e-4b66-80fd-15f13e877c7f",
+            "fullUrl": "urn:uuid:9965d8e5-9c6e-4b66-80fd-15f13e877c7d",
             "resource": {
-                "id": "9965d8e5-9c6e-4b66-80fd-15f13e877c7f",
+                "id": "9965d8e5-9c6e-4b66-80fd-15f13e877c7d",
                 "status": "in-progress",
                 "description": {
                     "text": "Make sure the patient is not nauseated and/or vomiting after the surgery."
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6e"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6t"
                     }
                 ],
                 "resourceType": "Goal",
@@ -696,16 +705,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:13c8396e-bf6e-4976-bc28-a27ecc8d9a35",
+            "fullUrl": "urn:uuid:13c8396e-bf6e-4976-bc28-a27ecc8d9a98",
             "resource": {
-                "id": "13c8396e-bf6e-4976-bc28-a27ecc8d9a35",
+                "id": "13c8396e-bf6e-4976-bc28-a27ecc8d9a98",
                 "status": "in-progress",
                 "description": {
                     "text": "Address patient knowledge deficit on liver self-care"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6e"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6t"
                     }
                 ],
                 "resourceType": "Goal",
@@ -734,34 +743,31 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "period": {
                     "start": "1981-02-26"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6e"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6t"
                     }
                 ],
                 "goal": [
                     {
-                        "reference": "urn:uuid:544fdc8a-c87a-4f39-91e5-c7dcc109bf8f"
+                        "reference": "urn:uuid:0fada7e6-00ca-436f-b904-14909ca3dc47"
                     },
                     {
-                        "reference": "urn:uuid:0fada7e6-00ca-436f-b904-14909ca3dc4b"
+                        "reference": "urn:uuid:68e6b8aa-e73a-414a-ac33-2cd6aa9f111h"
                     },
                     {
-                        "reference": "urn:uuid:68e6b8aa-e73a-414a-ac33-2cd6aa9f111f"
+                        "reference": "urn:uuid:9965d8e5-9c6e-4b66-80fd-15f13e877c7d"
                     },
                     {
-                        "reference": "urn:uuid:9965d8e5-9c6e-4b66-80fd-15f13e877c7f"
-                    },
-                    {
-                        "reference": "urn:uuid:13c8396e-bf6e-4976-bc28-a27ecc8d9a35"
+                        "reference": "urn:uuid:13c8396e-bf6e-4976-bc28-a27ecc8d9a98"
                     }
                 ],
                 "activity": [
@@ -806,9 +812,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a16",
+            "fullUrl": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a18",
             "resource": {
-                "id": "1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a16",
+                "id": "1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a18",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-medication-Medication"
@@ -866,13 +872,13 @@
                 "status": "active",
                 "intent": "order",
                 "medicationReference": {
-                    "reference": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a16"
+                    "reference": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a18"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd76ac"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd86ui"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a411"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a675"
                 },
                 "authoredOn": "1981-03-12",
                 "resourceType": "MedicationRequest"
