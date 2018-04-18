@@ -8,7 +8,7 @@ RUN pip install requests
 RUN apt-get install -y netcat-traditional  
 
 #setup nodejs
-RUN apt-get install -y npm nodejs-legacy 
+RUN apt-get install -y nodejs npm 
 RUN npm cache clean -f
 RUN npm install -g n
 RUN n stable

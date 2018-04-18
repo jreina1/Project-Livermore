@@ -59,7 +59,7 @@ class FHIRHelper(object):
             
     def runFhirCxn(self):
         
-        workdir = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin"
+#         workdir = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin"
         workdir = "/app/bin"
         cmd = "cd " + workdir + ";java -cp fhirConnector-1.0.jar FHIRConnector"
         
@@ -72,9 +72,7 @@ class FHIRHelper(object):
         print t
         
     def loadFhir(self):
-        
-#         workdir = "/home/user/code/repo/Project-Livermore/project/pl-fhircxn/bin"
-        
+                
         cmd = "cd /app/tag-uploader;"
         cmd += "node . --silent -d ../patients -S http://pl-fhir:8080/baseDstu3"
         
