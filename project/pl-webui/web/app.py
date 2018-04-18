@@ -26,13 +26,15 @@ def update():
     Patient_symptoms= ""
     Patient_treatment= ""
 
-
+    print request.form 
     patient = request.form['patientId']
+    
     if patient:   
         
-        query_patient = '''SELECT Patient_first_name, Patient_last_name, Patient_diagnosis, Patient_symptoms, Patient_treatment    
-                           FROM Patient
-                           WHERE Id = %s;''' %patient
+        query_patient = '''SELECT Patient_first_name, Patient_last_name, Patient_diagnosis, Patient_symptoms, Patient_treatment   
+                           FROM Patient, PatientID
+                           
+                           WHERE PatientID.Patient_id = Patient.Patient_id AND PatientID.Id = %s;''' %patient
         
         
         
