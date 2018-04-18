@@ -23,14 +23,7 @@ RUN npm i
 COPY ./patients /app/patients/
 COPY ./bin /app/bin/
 
-#ENV FH pl-fhir
-#ENV FP 8080
-
 WORKDIR /app/bin
 CMD python /app/bin/FHIRHelper.py
-
-
-#ADD bin/ /docker-entrypoint-initdb.d
-#RUN chmod -v a+rwx /docker-entrypoint-initdb.d/setupFhirCxn.sh
 
 
