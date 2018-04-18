@@ -274,6 +274,15 @@
                     "start": "1981-08-02T03:17:54-04:00",
                     "end": "1981-08-02T03:32:54-04:00"
                 },
+                "reason": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "422587007",
+                            "display": "Nausea"
+                        }
+                    ]
+                },
                 "serviceProvider": {
                     "reference": "urn:uuid:d1c2a100-5aba-4f0d-a3a7-624a65ed4ecd"
                 },
