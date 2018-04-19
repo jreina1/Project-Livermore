@@ -153,6 +153,16 @@ $(document).ready(function() {
 		path_id = 8;
 	});
 	
+	$('#overlay').click(function() {
+		$('#overlay').css('display','none');
+	});
+	
+	
+	$('#helpPage').click(function() {
+		$('#overlay').css('display','block');
+	});
+	
+	
 //	$('#patientFive').click(function() {
 //		
 //		var patient = $(this).attr('value');

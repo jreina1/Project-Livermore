@@ -126,6 +126,30 @@ body {
     cursor: pointer;
 }
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: fixed;
+    width: 66%;
+    height: 100%;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    overflow-y: auto;
+}
 
 @media only screen and (max-width: 600px) {
   #main {
