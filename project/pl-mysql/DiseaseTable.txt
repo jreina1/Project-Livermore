@@ -1,27 +1,45 @@
-1,1,Healthy Liver,"The liver is the second largest organ in your body and is located under your rib cage on the right side. It weighs about three pounds and is shaped like a football that is flat on one side. The liver performs many jobs in your body: it processes what you eat and drink into energy and nutrients your body can use. The liver also removes harmful substances from your blood. A healthy liver has the amazing ability to grow back, or regenerate, when it is damaged. Anything that keeps your liver from its function or from growing back after injury may put your life in danger!",NULL,NULL,NULL,NULL,NULL,"- Eating a healthy diet and exercising regularly help the liver to work well. Eating an unhealthy diet can lead to liver disease. - Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells. - Manage your medications: When medicines are taken incorrectly- by taking too much or the wrong type or by mizing- the liver can be harmed, Follow dosing instructions and learn about medicines and how they can affect the liver will lead to protection. - Avoid breathing in or touching toxins: Toxins can injure liver cells. Limit direct contact with toxins from cleaning and aerosol products, insecticides, chemicals, and additives in cigarettes", 1. https://www.aamg.co/liver/health-information-resources/liver/liver-wellness/  2. https://www.liverfoundation.org/for-patients/about-the-liver/health-wellness/
-2,197315008,Non-Alcoholic Fatty Liver Disease,"Nonalcoholic fatty liver disease is an umbrella term for a range of liver conditions affecting people who drink little to no alcohol. As the name implies, the main characteristic of nonalcoholic fatty liver disease is too much fat stored in liver cells.
+1,1,Healthy Liver,"The liver is the second largest organ in your body and is located under your rib cage on the right side. It weighs about three pounds and is shaped like a football that is flat on one side. The liver performs many jobs in your body: it processes what you eat and drink into energy and nutrients your body can use. The liver also removes harmful substances from your blood. A healthy liver has the amazing ability to grow back, or regenerate, when it is damaged. Anything that keeps your liver from its function or from growing back after injury may put your life in danger!",NULL,NULL,NULL,NULL,NULL,"<ul>
+  <li>Eating a healthy diet and exercising regularly help the liver to work well. Eating an unhealthy diet can lead to liver disease. - Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells.</li>
+  <li>Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells.</li>
+  <li>Manage your medications: When medicines are taken incorrectly- by taking too much or the wrong type or by mizing- the liver can be harmed, Follow dosing instructions and learn about medicines and how they can affect the liver will lead to protection.</li>
+  <li>Avoid breathing in or touching toxins: Toxins can injure liver cells. Limit direct contact with toxins from cleaning and aerosol products, insecticides, chemicals, and additives in cigarettes </li>
+</ul>  ",<ul><li>https://www.aamg.co/liver/health-information-resources/liver/liver-wellness/</li><li>https://www.liverfoundation.org/for-patients/about-the-liver/health-wellness/</li></ul>  
+2,197315008,Non-Alcoholic Fatty Liver Disease,"<ul>
+  <li>Nonalcoholic fatty liver disease is an umbrella term for a range of liver conditions affecting people who drink little to no alcohol. As the name implies, the main characteristic of nonalcoholic fatty liver disease is too much fat stored in liver cells.</li>
+  <li>Nonalcoholic steatohepatitis, a potentially serious form of the disease, is marked by liver inflammation, which may progress to scarring and irreversible damage. This damage is similar to the damage caused by heavy alcohol use. At its most severe, nonalcoholic steatohepatitis can progress to cirrhosis and liver failure</li>
+  <li>Nonalcoholic fatty liver disease is increasingly common around the world, especially in Western nations. In the United States, it is the most common form of chronic liver disease, affecting an estimated 80 to 100 million people.</li>
+  <li> Nonalcoholic fatty liver disease occurs in every age group but especially in people in their 40s and 50s who are at high risk of heart disease because of such risk factors as obesity and type 2 diabetes. The condition is also closely linked to metabolic syndrome, which is a cluster of abnormalities including increased abdominal fat, poor ability to use the hormone insulin, high blood pressure and high blood levels of triglycerides, a type of fat. </li>
 
-Nonalcoholic steatohepatitis, a potentially serious form of the disease, is marked by liver inflammation, which may progress to scarring and irreversible damage. This damage is similar to the damage caused by heavy alcohol use. At its most severe, nonalcoholic steatohepatitis can progress to cirrhosis and liver failure
+</ul> ","Nonalcoholic fatty liver disease usually causes no signs and symptoms. When it does, they may include:
 
-Nonalcoholic fatty liver disease is increasingly common around the world, especially in Western nations. In the United States, it is the most common form of chronic liver disease, affecting an estimated 80 to 100 million people.
+<ul>
 
-Nonalcoholic fatty liver disease occurs in every age group but especially in people in their 40s and 50s who are at high risk of heart disease because of such risk factors as obesity and type 2 diabetes. The condition is also closely linked to metabolic syndrome, which is a cluster of abnormalities including increased abdominal fat, poor ability to use the hormone insulin, high blood pressure and high blood levels of triglycerides, a type of fat.","Nonalcoholic fatty liver disease usually causes no signs and symptoms. When it does, they may include:
+  <li>Enlarged liver </li>
+  <li>Fatigue </li>
+  <li>Pain in the upper right abdomen</li>
+  
 
-Enlarged liver
-Fatigue
-Pain in the upper right abdomen
+</ul>  
 Possible signs and symptoms of nonalcoholic steatohepatitis and cirrhosis (advanced scarring) include:
+<ul>
 
-Abdominal swelling (ascites)
-Enlarged blood vessels just beneath the skin's surface
-Enlarged breasts in men
-Enlarged spleen
-Red palms
-Yellowing of the skin and eyes (jaundice)","The first line of treatment is usually weight loss through a combination of a healthy diet and exercise. Losing weight addresses the conditions that contribute to nonalcoholic fatty liver disease. Ideally, a loss of 10 percent of body weight is desirable, but improvement in risk factors can become apparent if you lose even three to five percent of your starting weight. Weight-loss surgery is also an option for those who need to lose a great deal of weight.
+  <li>Abdominal swelling (ascites) </li>
+  <li>Enlarged blood vessels just beneath the skin's surface </li>
+  <li>Enlarged breasts in men</li>
+  <li>Enlarged spleen</li>
+  <li>Red palms </li>
+  <li>Yellowing of the skin and eyes (jaundice) </li>
+  
+  
 
-Your doctor may recommend that you receive vaccinations against hepatitis A and hepatitis B to help protect you from viruses that may cause further liver damage.
+</ul> ","<ul>
 
-For those who have cirrhosis due to nonalcoholic steatohepatitis, liver transplantation may be an option. Outcomes of liver transplant in this population group are generally very good.","Experts don't know exactly why some people accumulate fat in the liver while others do not. Similarly, there is limited understanding of why some fatty livers develop inflammation that progresses to cirrhosis. Nonalcoholic fatty liver disease and nonalcoholic steatohepatitis are both linked to the following:
+  <li>The first line of treatment is usually weight loss through a combination of a healthy diet and exercise. Losing weight addresses the conditions that contribute to nonalcoholic fatty liver disease. Ideally, a loss of 10 percent of body weight is desirable, but improvement in risk factors can become apparent if you lose even three to five percent of your starting weight. Weight-loss surgery is also an option for those who need to lose a great deal of weight. </li>
+  <li>Your doctor may recommend that you receive vaccinations against hepatitis A and hepatitis B to help protect you from viruses that may cause further liver damage. </li>
+  <li>For those who have cirrhosis due to nonalcoholic steatohepatitis, liver transplantation may be an option. Outcomes of liver transplant in this population group are generally very good.</li>
+  
+
+</ul>  ","Experts don't know exactly why some people accumulate fat in the liver while others do not. Similarly, there is limited understanding of why some fatty livers develop inflammation that progresses to cirrhosis. Nonalcoholic fatty liver disease and nonalcoholic steatohepatitis are both linked to the following:
 
 Overweight or obesity
 Insulin resistance, in which your cells don't take up sugar in response to the hormone insulin
@@ -57,22 +75,23 @@ About 20 percent of people with nonalcoholic steatohepatitis will progress to ci
 
 Choose a healthy diet. Choose a healthy plant-based diet that's rich in fruits, vegetables, whole grains and healthy fats.
 Maintain a healthy weight. If you are overweight or obese, reduce the number of calories you eat each day and get more exercise. If you have a healthy weight, work to maintain it by choosing a healthy diet and exercising.
-Exercise. Exercise most days of the week. Get an OK from your doctor first if you haven't been exercising regularly.", 1. https://www.liverfoundation.org/for-patients/non-alcoholic-fatty-liver-disease/    2. https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567 3. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4394070/
+Exercise. Exercise most days of the week. Get an OK from your doctor first if you haven't been exercising regularly.",<ul><li>https://www.liverfoundation.org/for-patients/non-alcoholic-fatty-liver-disease/</li><li>https://www.mayoclinic.org/diseases-conditions/nonalcoholic-fatty-liver-disease/symptoms-causes/syc-20354567</li><li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4394070/</li></ul>
 3,93870000,Liver Cancer,"Liver cancer is cancer that begins in the cells of your liver. Your liver is a football-sized organ that sits in the upper right portion of your abdomen, beneath your diaphragm and above your stomach.
 
 Several types of cancer can form in the liver. The most common type of liver cancer is hepatocellular carcinoma, which begins in the main type of liver cell (hepatocyte). Other types of liver cancer, such as intrahepatic cholangiocarcinoma and hepatoblastoma, are much less common.
 
-Not all cancers that affect the liver are considered liver cancer. Cancer that begins in another area of the body â such as the colon, lung or breast â and then spreads to the liver is called metastatic cancer rather than liver cancer. And this type of cancer is named after the organ in which it began â such as metastatic colon cancer to describe cancer that begins in the colon and spreads to the liver. Cancer that spreads to the liver is more common than cancer that begins in the liver cells","Most people don't have signs and symptoms in the early stages of primary liver cancer. When signs and symptoms do appear, they may include:
+Not all cancers that affect the liver are considered liver cancer. Cancer that begins in another area of the body — such as the colon, lung or breast — and then spreads to the liver is called metastatic cancer rather than liver cancer. And this type of cancer is named after the organ in which it began — such as metastatic colon cancer to describe cancer that begins in the colon and spreads to the liver. Cancer that spreads to the liver is more common than cancer that begins in the liver cells","Most people don't have signs and symptoms in the early stages of primary liver cancer. When signs and symptoms do appear, they may include:
 
-Losing weight without trying
-Loss of appetite
-Upper abdominal pain
-Nausea and vomiting
-General weakness and fatigue
-Abdominal swelling
-Yellow discoloration of your skin and the whites of your eyes (jaundice)
-White, chalky stools","Treatments for primary liver cancer depend on the extent (stage) of the disease as well as your age, overall health and personal preferences.
-
+<ul>
+<li>Losing weight without trying</li>
+<li>Loss of appetite</li>
+<li>Upper abdominal pain</li>
+<li>Nausea and vomiting</li>
+<li>General weakness and fatigue</li>
+<li>Abdominal swelling</li>
+<li>Yellow discoloration of your skin and the whites of your eyes (jaundice)</li>
+<li>White, chalky stools","Treatments for primary liver cancer depend on the extent (stage) of the disease as well as your age, overall health and personal preferences.</li>
+</ul>
 Surgery
 Operations used to treat liver cancer include:
 
@@ -108,7 +127,7 @@ When palliative care is used along with all of the other appropriate treatments,
 
 Palliative care is provided by a team of doctors, nurses and other specially trained professionals. Palliative care teams aim to improve the quality of life for people with cancer and their families. This form of care is offered alongside curative or other treatments you may be receiving.","It's not clear what causes most cases of liver cancer. But in some cases, the cause is known. For instance, chronic infection with certain hepatitis viruses can cause liver cancer.
 
-Liver cancer occurs when liver cells develop changes (mutations) in their DNA â the material that provides instructions for every chemical process in your body. DNA mutations cause changes in these instructions. One result is that cells may begin to grow out of control and eventually form a tumor â a mass of cancerous cells.","Factors that increase the risk of primary liver cancer include:
+Liver cancer occurs when liver cells develop changes (mutations) in their DNA — the material that provides instructions for every chemical process in your body. DNA mutations cause changes in these instructions. One result is that cells may begin to grow out of control and eventually form a tumor — a mass of cancerous cells.","Factors that increase the risk of primary liver cancer include:
 
 Chronic infection with HBV or HCV. Chronic infection with the hepatitis B virus (HBV) or hepatitis C virus (HCV) increases your risk of liver cancer.
 Cirrhosis. This progressive and irreversible condition causes scar tissue to form in your liver and increases your chances of developing liver cancer.
@@ -136,7 +155,7 @@ internal bleeding","Reduce your risk of cirrhosis
 Cirrhosis is scarring of the liver, and it increases the risk of liver cancer. You can reduce your risk of cirrhosis if you:
 
 Drink alcohol in moderation, if at all. If you choose to drink alcohol, limit the amount you drink. For women, this means no more than one drink a day. For men, this means no more than two drinks a day.
-Maintain a healthy weight. If your current weight is healthy, work to maintain it by choosing a healthy diet and exercising most days of the week. If you need to lose weight, reduce the number of calories you eat each day and increase the amount of exercise you do. Aim to lose weight slowly â 1 or 2 pounds (0.5 to 1 kilograms) each week.
+Maintain a healthy weight. If your current weight is healthy, work to maintain it by choosing a healthy diet and exercising most days of the week. If you need to lose weight, reduce the number of calories you eat each day and increase the amount of exercise you do. Aim to lose weight slowly — 1 or 2 pounds (0.5 to 1 kilograms) each week.
 Use caution with chemicals. Follow instructions on chemicals you use at home or at work.
 Get vaccinated against hepatitis B
 You can reduce your risk of hepatitis B by receiving the hepatitis B vaccine, which provides more than 90 percent protection for both adults and children. The vaccine can be given to almost anyone, including infants, older adults and those with compromised immune systems.
@@ -154,8 +173,8 @@ Hepatitis B and one or more of the following apply: are Asian or African, have l
 Hepatitis C infection and liver cirrhosis
 Liver cirrhosis from other causes, such as an autoimmune disease, excessive alcohol use, nonalcoholic fatty liver disease and inherited hemochromatosis
 Primary biliary cirrhosis
-Discuss the pros and cons of screening with your doctor. Together you can decide whether screening is right for you based on your risk. Screening typically involves an ultrasound exam every six months.", 1. https://www.mayoclinic.org/diseases-conditions/liver-cancer/symptoms-causes/syc-20353659  2. https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/liver-cancer/
-4,19943007,Liver Cirrhosis,"Cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism. The liver carries out several necessary functions, including detoxifying harmful substances in your body, cleaning your blood and making vital nutrients.
+Discuss the pros and cons of screening with your doctor. Together you can decide whether screening is right for you based on your risk. Screening typically involves an ultrasound exam every six months.",<ul><li>https://www.mayoclinic.org/diseases-conditions/liver-cancer/symptoms-causes/syc-20353659</li><li>https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/liver-cancer/</li></ul>
+4,1111,Liver Cirrhosis,"Cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism. The liver carries out several necessary functions, including detoxifying harmful substances in your body, cleaning your blood and making vital nutrients.
 
 Cirrhosis occurs in response to damage to your liver. Each time your liver is injured, it tries to repair itself. In the process, scar tissue forms. As cirrhosis progresses, more and more scar tissue forms, making it difficult for the liver to function.
 
@@ -191,7 +210,7 @@ Other medications can relieve certain symptoms, such as itching, fatigue and pai
 Treatment for complications of cirrhosis
 Your doctor will work to treat any complications of cirrhosis, including:
 
-Excess fluid in your body. A low-sodium diet and medication to prevent fluid buildup in the body may help control ascites and swelling. More-severe fluid buildup may require procedures to drain the fluid or other interventions to relieve pressure. At times, a small tube â a transjugular intrahepatic portosystemic shunt (TIPS) â is placed in the vein within the liver to reduce blood pressure in your liver and slow the rate of fluid accumulation.
+Excess fluid in your body. A low-sodium diet and medication to prevent fluid buildup in the body may help control ascites and swelling. More-severe fluid buildup may require procedures to drain the fluid or other interventions to relieve pressure. At times, a small tube — a transjugular intrahepatic portosystemic shunt (TIPS) — is placed in the vein within the liver to reduce blood pressure in your liver and slow the rate of fluid accumulation.
 Portal hypertension. Certain blood pressure medications may control increased pressure in the veins that supply the liver (portal hypertension) and prevent severe bleeding. Your doctor will perform an upper endoscopy at regular intervals to look for enlarged veins in the esophagus or stomach (varices) that may bleed.
 
 If you develop varices, you likely will need medication to reduce the risk of bleeding. If you are not able to tolerate medication and have signs that the varices are bleeding or are likely to bleed, you may need a procedure (band ligation) to stop the bleeding or reduce the risk of further bleeding. In severe cases, a TIPS can be placed in the vein within the liver to reduce blood pressure in your liver and to prevent further bleeding.
@@ -248,8 +267,8 @@ Do not drink alcohol if you have cirrhosis. If you have liver disease but do not
 Eat a healthy diet. Choose a plant-based diet that's full of fruits and vegetables. Select whole grains and lean sources of protein. Reduce the amount of fatty and fried foods you eat. Caffeinated coffee may protect against fibrosis and liver cancer.
 Maintain a healthy weight. An excess amount of body fat can damage your liver. Talk to your doctor about a weight-loss plan if you are obese or overweight.
 Reduce your risk of hepatitis. Sharing needles and having unprotected sex can increase your risk of hepatitis B and C. Ask your doctor about hepatitis vaccinations.
-If you're concerned about your risk of liver cirrhosis, talk to your doctor about ways you can reduce your risk.", 1. https://www.mayoclinic.org/diseases-conditions/cirrhosis/symptoms-causes/syc-20351487   2. https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/cirrhosis/ 
-5,93469005,Liver Fibrosis,"Liver fibrosis refers to the accumulation of tough, fibrous scar tissue in the liver.
+If you're concerned about your risk of liver cirrhosis, talk to your doctor about ways you can reduce your risk.",<ul><li>https://www.mayoclinic.org/diseases-conditions/cirrhosis/symptoms-causes/syc-20351487</li><li>https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/cirrhosis/</li></ul>
+5,62484002,Liver Fibrosis,"Liver fibrosis refers to the accumulation of tough, fibrous scar tissue in the liver.
 Formation of scar tissue is a normal bodily response to injury, but in fibrosis
 this healing process goes wrong. When hepatocytes (functional liver cells) are
 injured due to infection with a virus, heavy alcohol consumption, toxins, trauma,
@@ -265,11 +284,7 @@ the synthesis (fibrogenesis) and breakdown (fibrolysis) of matrix tissue are in
 balance. Fibrosis occurs when excessive scar tissue builds up faster than it can
 be broken down and removed from the liver.","In the early stages of liver fibrosis, few people experience symptoms because the liver functions relatively well. Fibrosis is the initial stage of the formation of scar tissue in the liver. An individual may have no symptoms and live a normal, sometimes very active life, for decades, and remain unaware that he or she has liver disease.
 
-
-
 As scar tissue builds up, due to inflammation and the continuance of liver injury, it connects with existing scar tissue, which can eventually disrupt the metabolic functions of the liver. If the disease progresses, it can lead to cirrhosis, a condition in which the liver is severely scarred, its blood flow is restricted, and its ability to function is impaired.
-
-
 
 If poked, a healthy liver is very soft. A liver that has developed fibrosis is firmer, and if the condition progresses to cirrhosis, the liver can be almost rock-hard.","The process leading to cirrhosis can often be slowed and sometimes even halted. The liver has an amazing ability to regenerate itself once the underlying cause of the fibrosis is controlled or cured.
 
@@ -283,11 +298,7 @@ Avoid the use of recreational drugs.
 Use over the counter medications carefully avoid aspirin, ibuprofen, (Advil, Motrin, others) and naproxen (Aleve, others). When in doubt, consult a physician or pharmacist.
 Get regular exercise and rest.","Fibrosis occurs when excessive scar tissue builds up faster than it can be broken down and removed from the liver. Chronic infection with hepatitis C or hepatitis B virus (HCV or HBV), heavy alcohol consumption, toxins, trauma or other factors can all lead to liver fibrosis. Only in rare instances is liver fibrosis the primary problem; more often, it is secondary to some other liver disease such as cirrhosis.
 
-
-
 Normally, the body’s response to injury is the formation of scar tissue. In the case of fibrosis, the healing process goes haywire. When hepatocytes (functional liver cells) are injured due to a virus, alcohol, toxins, trauma or other factors, the immune system goes to work to repair the damage. During the fibrosis process, the injured hepatocytes cause substances to be released into the liver causing the buildup of the scar tissue.
-
-
 
 ","Risk factors for developing liver fibrosis are as follows:
 
@@ -298,19 +309,12 @@ Compromised immune system (due to coinfection with HIV or use of immunosuppressi
 Heavy alcohol consumption
 Fatty liver (steatosis)
 Insulin resistance (the condition in which the cells of the body become resistant to the effects of insulin, that is, the normal response to a given amount of insulin is reduced. As a result, higher levels of insulin are needed in order for insulin to have its effects).","In the early stages of fibrosis, the liver functions relatively
-
 well and few people experience symptoms. But as
-
 the inflammation and liver injury continue, scar tissue
-
 builds up and connects with existing scar tissue, which
-
 can eventually disrupt the metabolic functions of the
-
 liver. If the disease progresses, it can lead to cirrhosis, a
-
 condition in which the liver is severely scarred, its blood
-
 flow is restricted, and its ability to function is impaired.","It is very important to know the fibrosis stage or health of
 the liver so that the appropriate decisions can be made
 to stop disease progression:
@@ -327,18 +331,12 @@ chicken, turkey, cheeses, nuts and beans
 •	 Don’t drink alcohol, or at the very least, limit how
 much you drink.
 •	 Take your prescriptions as instructed by your doctor. Be careful when mixing over-the-counter drugs, prescription drugs, herbal supplements,
-
 street drugs and/or alcohol.
-
 •	 Stay away from poisonous liquids and fumes including solvents, paint thinners,
-
 and bug killers. If you have to use such chemicals, cover your skin, wear gloves
-
 and a mask and keep the windows open to allow air in.
-
 •	 Do not eat raw or undercooked shellfish, which may have diseases that can be
-
-harmful to the liver", 1. https://www.liversupport.com/liver-fibrosis 2. http://hcvadvocate.org/hepatitis/factsheets_pdf/Fibrosis.pdf
+harmful to the liver",1. https://www.liversupport.com/liver-fibrosis                                                                                                                                    2. http://hcvadvocate.org/hepatitis/factsheets_pdf/Fibrosis.pdf
 6,93469006,Liver Hemangioma (Benign Liver Tumor),"A liver hemangioma (he-man-jee-O-muh) is a noncancerous (benign) mass in the liver. A liver hemangioma is made up of a tangle of blood vessels. Other terms for a liver hemangioma are hepatic hemangioma and cavernous hemangioma.
 
 Most cases of liver hemangiomas are discovered during a test or procedure for some other condition. People who have a liver hemangioma rarely experience signs and symptoms and don't need treatment.
@@ -361,7 +359,7 @@ Surgery to remove the liver hemangioma. If the hemangioma can be easily separate
 Surgery to remove part of the liver, including the hemangioma. In some cases, surgeons may need to remove a portion of your liver along with the hemangioma.
 Procedures to stop blood flow to the hemangioma. Without a blood supply, the hemangioma may stop growing or shrink. Two ways to stop the blood flow are tying off the main artery (hepatic artery ligation) or injecting medication into the artery to block it (arterial embolization). Healthy liver tissue is unharmed because it can draw blood from other nearby vessels.
 Liver transplant surgery. In the unlikely event that you have a large hemangioma or multiple hemangiomas that can't be treated by other means, your doctor may recommend surgery to remove your liver and replace it with a liver from a donor.
-Radiation therapy. Radiation therapy uses powerful energy beams, such as X-rays, to damage the cells of the hemangioma. This treatment is rarely used because of the availability of safer and more effective treatments.","It's not clear what causes a liver hemangioma to form. Doctors believe liver hemangiomas are congenital â meaning that you're born with them.
+Radiation therapy. Radiation therapy uses powerful energy beams, such as X-rays, to damage the cells of the hemangioma. This treatment is rarely used because of the availability of safer and more effective treatments.","It's not clear what causes a liver hemangioma to form. Doctors believe liver hemangiomas are congenital — meaning that you're born with them.
 
 A liver hemangioma usually occurs as a single abnormal collection of blood vessels that is less than about 1.5 inches (about 4 centimeters) wide. Occasionally liver hemangiomas can be larger or occur in multiples. Large hemangiomas can occur in young children but this is very rare.
 
@@ -374,7 +372,7 @@ Hormone replacement therapy. Women who used hormone replacement therapy for meno
 
 Rarely, growing hemangioma can cause signs and symptoms that may require treatment, including pain in the upper right quadrant of the abdomen, abdominal bloating or nausea. Having a liver hemangioma doesn't mean you can't become pregnant. However, discussing the possible complications with your doctor can help you make a more informed choice.
 
-Medications that affect hormone levels in your body, such as birth control pills, could cause complications if you've been diagnosed with a liver hemangioma. But this is controversial. If you're considering this type of medication, discuss the benefits and risks with your doctor.","Because there are no proven associations between liver hemangiomas and cancer, most individuals do not need treatment. If symptoms are present and bothersome, there are a number of treatment options available for liver hemangiomas.", "1. https://www.mayoclinic.org/diseases-conditions/liver-hemangioma/symptoms-causes/syc-20354234 2. https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/benign-liver-tumors/ "
+Medications that affect hormone levels in your body, such as birth control pills, could cause complications if you've been diagnosed with a liver hemangioma. But this is controversial. If you're considering this type of medication, discuss the benefits and risks with your doctor.","Because there are no proven associations between liver hemangiomas and cancer, most individuals do not need treatment. If symptoms are present and bothersome, there are a number of treatment options available for liver hemangiomas.",1. https://www.mayoclinic.org/diseases-conditions/liver-hemangioma/symptoms-causes/syc-20354234                                        2. https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/benign-liver-tumors/
 7,716196007,Polycystic Liver Disease,"Polycystic liver disease is an inherited disorder characterized by many cysts of various sizes scattered throughout the liver. Abdominal discomfort from swelling of the liver may occur; however, most affected individuals do not have any symptoms. In some cases, polycystic liver disease appears to occur randomly, with no apparent cause (sporadically). Most cases are inherited as an autosomal dominant genetic trait. Sometimes, cysts are found in the liver in association with the presence of autosomal dominant polycystic kidney disease (AD-PKD). In fact, about half of the people who have AD-PKD experience liver cysts. However, kidney cysts are uncommon in those affected by polycystic liver disease.","Polycystic liver disease is characterized by a few to many cysts in the liver ranging in size from a few millimeters to over 15 cm in diameter. Symptoms rarely occur although the liver gradually expands as the cysts grow larger. Abdominal discomfort may occur due to the expansion of the liver. Fever may also occur if the cysts break, due to infection or bleeding. Rarely, yellowing of the skin (jaundice) may occur if the bile ducts are compressed by a cyst. High blood pressure in the portal system (blood flow from the intestines to the liver) occurs only if the portal vein is compressed by a cyst.
 
 Liver function is generally unaffected if the liver has only a few cysts or small cysts.","Treatment may not be necessary in many cases of polycystic liver disease (PLD). Removal of the fluid in large cysts (aspiration) may be required in PLD patients with troublesome symptoms.
@@ -383,7 +381,7 @@ Genetic counseling may be of benefit for patients and their families. Other trea
 
 Changes (mutations) in two genes, one on the short arm of chromosome 19 (19p-13.2-13.1) and one on the long arm of chromosome 6 (6q21-q23) are thought to be linked to polycystic liver disease. These genes are not associated with AD-PKD.
 
-Chromosomes, which are present in the nucleus of human cells, carry the genetic information for each individual. Human body cells normally have 46 chromosomes. Pairs of human chromosomes are numbered from 1 through 22 and the sex chromosomes are designated X and Y. Males have one X and one Y chromosome and females have two X chromosomes. Each chromosome has a short arm designated âpâ and a long arm designated âqâ. Chromosomes are further sub-divided into many bands that are numbered. For example, âchromosome 19p13.2-13.1â refers to a region between bands 13.1 and 13.2 on the short arm of chromosome 19. Similarly, chromosome 6q21-q23 refers to a region between bands 21 and 23 on the long arm of chromosome 6. The numbered bands specify the location of the thousands of genes that are present on each chromosome.
+Chromosomes, which are present in the nucleus of human cells, carry the genetic information for each individual. Human body cells normally have 46 chromosomes. Pairs of human chromosomes are numbered from 1 through 22 and the sex chromosomes are designated X and Y. Males have one X and one Y chromosome and females have two X chromosomes. Each chromosome has a short arm designated “p” and a long arm designated “q”. Chromosomes are further sub-divided into many bands that are numbered. For example, “chromosome 19p13.2-13.1” refers to a region between bands 13.1 and 13.2 on the short arm of chromosome 19. Similarly, chromosome 6q21-q23 refers to a region between bands 21 and 23 on the long arm of chromosome 6. The numbered bands specify the location of the thousands of genes that are present on each chromosome.
 
 Genetic diseases are determined by the combination of genes for a particular trait that are on the chromosomes received from the father and the mother.
 
@@ -395,4 +393,4 @@ When the cysts cause the liver to grow very large, people may experience hernias
 
 Avoid caffeine (e.g. in coffee, tea and colas)
 Follow a low salt (sodium) diet
-Women should be cautious about using oestrogen-containing contraception (e.g. the âPillâ) and hormone replacement therapy. Ask to be referred to a specialist so that you can discuss the best option for you.", 1. https://rarediseases.org/rare-diseases/polycystic-liver-disease/  2. https://ojrd.biomedcentral.com/articles/10.1186/1750-1172-9-69 
+Women should be cautious about using oestrogen-containing contraception (e.g. the ‘Pill’) and hormone replacement therapy. Ask to be referred to a specialist so that you can discuss the best option for you.",1. https://rarediseases.org/rare-diseases/polycystic-liver-disease/                                                                                                   2. https://ojrd.biomedcentral.com/articles/10.1186/1750-1172-9-69
