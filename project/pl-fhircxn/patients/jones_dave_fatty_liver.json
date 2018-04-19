@@ -2,9 +2,9 @@
     "type": "collection",
     "entry": [
         {
-            "fullUrl": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd",
+            "fullUrl": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op",
             "resource": {
-                "id": "67eba314-7595-431c-9d62-8d30e0bd65sd",
+                "id": "67eba314-7595-431c-9d62-8d30e0bd65op",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-PersonOfRecord"
@@ -238,9 +238,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317",
+            "fullUrl": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256",
             "resource": {
-                "id": "e13a28cc-17ca-46ca-834e-917e4cd0a317",
+                "id": "e13a28cc-17ca-46ca-834e-917e4cd0a256",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-encounter-Encounter"
@@ -268,11 +268,20 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "period": {
                     "start": "1981-08-02T03:17:54-04:00",
                     "end": "1981-08-02T03:32:54-04:00"
+                },
+                "reason": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "84229001",
+                            "display": "Fatigue"
+                        }
+                    ]
                 },
                 "serviceProvider": {
                     "reference": "urn:uuid:d1c2a100-5aba-4f0d-a3a7-624a65ed4ecd"
@@ -308,10 +317,10 @@
                     "text": "Non-alcoholic fatty liver"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "onsetDateTime": "1951-12-07T23:40:52-05:00",
                 "assertedDate": "1951-12-07",
@@ -319,9 +328,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:4532a689-768c-40d1-a3d5-427f7951a9ae",
+            "fullUrl": "urn:uuid:4532a689-768c-40d1-a3d5-427f7951a9bc",
             "resource": {
-                "id": "4532a689-768c-40d1-a3d5-427f7951a9ae",
+                "id": "4532a689-768c-40d1-a3d5-427f7951a9bc",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-problem-Problem"
@@ -346,10 +355,10 @@
                     "text": "Non-alcoholic fatty liver"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "onsetDateTime": "1980-09-29T21:19:19-04:00",
                 "assertedDate": "1980-09-29",
@@ -357,9 +366,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:f68bd446-08c5-4f7c-b043-a8d6eea6f449",
+            "fullUrl": "urn:uuid:f68bd446-08c5-4f7c-b043-a8d6eea6f445",
             "resource": {
-                "id": "f68bd446-08c5-4f7c-b043-a8d6eea6f449",
+                "id": "f68bd446-08c5-4f7c-b043-a8d6eea6f445",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-problem-Problem"
@@ -384,10 +393,10 @@
                     "text": "Non-alcoholic fatty liver"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "onsetDateTime": "1980-10-08T13:10:08-04:00",
                 "assertedDate": "1980-10-08",
@@ -395,9 +404,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:7051c754-1898-4eb0-bb3e-9d12098eba97",
+            "fullUrl": "urn:uuid:7051c754-1898-4eb0-bb3e-db6dc2710b42",
             "resource": {
-                "id": "7051c754-1898-4eb0-bb3e-9d12098eba97",
+                "id": "7051c754-1898-4eb0-bb3e-db6dc2710b42",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-problem-Problem"
@@ -422,10 +431,10 @@
                     "text": "Non-alcoholic fatty liver"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "onsetDateTime": "1980-10-10T13:03:17-04:00",
                 "assertedDate": "1980-10-10",
@@ -433,9 +442,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6y",
+            "fullUrl": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6q",
             "resource": {
-                "id": "10dd22ac-2f7e-4008-971a-db6dc2710b6y",
+                "id": "10dd22ac-2f7e-4008-971a-db6dc2710b6q",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-problem-Problem"
@@ -460,10 +469,10 @@
                     "text": "Non-alcoholic fatty liver"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "onsetDateTime": "1981-02-26T02:46:04-05:00",
                 "assertedDate": "1981-02-26",
@@ -506,10 +515,10 @@
                     "text": "Cause of Death [US Standard Certificate of Death]"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "effectiveDateTime": "1981-08-02T03:17:54-04:00",
                 "issued": "1981-08-02T03:17:54-04:00",
@@ -527,9 +536,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:99ddd326-3fbb-4ff2-aacc-981df8e08633",
+            "fullUrl": "urn:uuid:99ddd326-3fbb-4ff2-aacc-981df8e08687",
             "resource": {
-                "id": "99ddd326-3fbb-4ff2-aacc-981df8e08633",
+                "id": "99ddd326-3fbb-4ff2-aacc-981df8e08687",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-observation-Panel"
@@ -552,10 +561,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "effectiveDateTime": "1981-08-02T03:17:54-04:00",
                 "issued": "1981-08-02T03:17:54-04:00",
@@ -583,17 +592,17 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "period": {
                     "start": "1980-10-10"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:7051c754-1898-4eb0-bb3e-9d12098eba97"
+                        "reference": "urn:uuid:7051c754-1898-4eb0-bb3e-db6dc2710b42"
                     }
                 ],
                 "activity": [
@@ -624,16 +633,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:544fdc8a-c87a-4f39-91e5-c7dcc109bf9i",
+            "fullUrl": "urn:uuid:544fdc8a-c87a-4f39-91e5-c7dcc109bf72",
             "resource": {
-                "id": "544fdc8a-c87a-4f39-91e5-c7dcc109bf9i",
+                "id": "544fdc8a-c87a-4f39-91e5-c7dcc109bf72",
                 "status": "in-progress",
                 "description": {
                     "text": "Patient must perform aerobic exercises 3 to 4 times a week"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6y"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6q"
                     }
                 ],
                 "resourceType": "Goal",
@@ -662,22 +671,22 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "period": {
                     "start": "1981-02-26"
                 },
                 "addresses": [
                     {
-                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6y"
+                        "reference": "urn:uuid:10dd22ac-2f7e-4008-971a-db6dc2710b6q"
                     }
                 ],
                 "goal": [
                     {
-                        "reference": "urn:uuid:544fdc8a-c87a-4f39-91e5-c7dcc109bf9i"
+                        "reference": "urn:uuid:544fdc8a-c87a-4f39-91e5-c7dcc109bf72"
                     }
                 ],
                 "activity": [
@@ -722,9 +731,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a18",
+            "fullUrl": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a98",
             "resource": {
-                "id": "1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a18",
+                "id": "1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a98",
                 "meta": {
                     "profile": [
                         "http://standardhealthrecord.org/fhir/StructureDefinition/shr-medication-Medication"
@@ -782,13 +791,13 @@
                 "status": "active",
                 "intent": "order",
                 "medicationReference": {
-                    "reference": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a18"
+                    "reference": "urn:uuid:1dee81cb-40c6-4fd4-bd70-c0ba5e4c9a98"
                 },
                 "subject": {
-                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65sd"
+                    "reference": "urn:uuid:67eba314-7595-431c-9d62-8d30e0bd65op"
                 },
                 "context": {
-                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a317"
+                    "reference": "urn:uuid:e13a28cc-17ca-46ca-834e-917e4cd0a256"
                 },
                 "authoredOn": "1981-03-12",
                 "resourceType": "MedicationRequest"
