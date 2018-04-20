@@ -102,8 +102,6 @@ function init() {
     fbxObjectCancer = object;
   }, onProgress, onError);
 
-
-
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
