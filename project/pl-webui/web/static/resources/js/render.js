@@ -72,37 +72,35 @@ function init() {
     currentModel = fbxObjectHealthy;
   }, onProgress, onError);
 
-//  loader.load(fbxPathFatty, function (object) {
-//    object.name = 'fatty';
-//    fbxObjectFatty = object;
-//  }, onProgress, onError);
-//
-//  loader.load(fbxPathFibrosis, function (object) {
-//    object.name = 'fibrosis';
-//    fbxObjectFibrosis = object;
-//  }, onProgress, onError);
-//
-//  loader.load(fbxPathCirrhosis, function (object) {
-//    object.name = 'cirrhosis';
-//    fbxObjectCirrhosis = object;
-//  }, onProgress, onError);
-//
-//  loader.load(fbxPathBenign, function (object) {
-//    object.name = 'benign';
-//    fbxObjectBenign = object;
-//  }, onProgress, onError);
-//
-//  loader.load(fbxPathPoly, function (object) {
-//    object.name = 'polycystic';
-//    fbxObjectPoly = object;
-//  }, onProgress, onError);
-//
-//  loader.load(fbxPathCancer, function (object) {
-//    object.name = 'cancer';
-//    fbxObjectCancer = object;
-//  }, onProgress, onError);
+  loader.load(fbxPathFatty, function (object) {
+    object.name = 'fatty';
+    fbxObjectFatty = object;
+  }, onProgress, onError);
 
+  loader.load(fbxPathFibrosis, function (object) {
+    object.name = 'fibrosis';
+    fbxObjectFibrosis = object;
+  }, onProgress, onError);
 
+  loader.load(fbxPathCirrhosis, function (object) {
+    object.name = 'cirrhosis';
+    fbxObjectCirrhosis = object;
+  }, onProgress, onError);
+
+  loader.load(fbxPathBenign, function (object) {
+    object.name = 'benign';
+    fbxObjectBenign = object;
+  }, onProgress, onError);
+
+  loader.load(fbxPathPoly, function (object) {
+    object.name = 'polycystic';
+    fbxObjectPoly = object;
+  }, onProgress, onError);
+
+  loader.load(fbxPathCancer, function (object) {
+    object.name = 'cancer';
+    fbxObjectCancer = object;
+  }, onProgress, onError);
 
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio(window.devicePixelRatio);
@@ -149,48 +147,76 @@ function switchModel(model) {
 	switch(model) {
 		case 'healthy':
 			scene.add(fbxObjectHealthy);
-      currentModel = fbxObjectHealthy;
-			document.getElementById('slideDisease').innerHTML = 'Healthy Liver'
+			currentModel = fbxObjectHealthy;
+			document.getElementById('slideDisease').innerHTML = 'Healthy Liver';
+			updateDisease(1);
 			break;
 		case 'fatty':
 			scene.add(fbxObjectFatty);
-      currentModel = fbxObjectFatty;
-			document.getElementById('slideDisease').innerHTML = 'Fatty Liver Disease'
+			currentModel = fbxObjectFatty;
+			document.getElementById('slideDisease').innerHTML = 'Fatty Liver Disease';
+			updateDisease(197315008);
 			break;
 		case 'fibrosis':
 			scene.add(fbxObjectFibrosis);
-      currentModel = fbxObjectFibrosis;
-			document.getElementById('slideDisease').innerHTML = 'Liver Fibrosis'
+			currentModel = fbxObjectFibrosis;
+			document.getElementById('slideDisease').innerHTML = 'Liver Fibrosis';
+			updateDisease(93469005);
 			break;
 		case 'cirrhosis':
 			scene.add(fbxObjectCirrhosis);
-      currentModel = fbxObjectCirrhosis;
-			document.getElementById('slideDisease').innerHTML = 'Liver Cirrhosis'
+			currentModel = fbxObjectCirrhosis;
+			document.getElementById('slideDisease').innerHTML = 'Liver Cirrhosis';
+			updateDisease(19943007);
 			break;
 		case 'benign':
 			scene.add(fbxObjectBenign);
-      currentModel = fbxObjectBenign;
-			document.getElementById('slideDisease').innerHTML = 'Benign Tumors'
+			currentModel = fbxObjectBenign;
+			document.getElementById('slideDisease').innerHTML = 'Benign Tumors';
+			updateDisease(93469006);
 			break;
 		case 'polycystic':
 			scene.add(fbxObjectPoly);
-      currentModel = fbxObjectPoly;
-			document.getElementById('slideDisease').innerHTML = 'Polycystic Liver'
+			currentModel = fbxObjectPoly;
+			document.getElementById('slideDisease').innerHTML = 'Polycystic Liver';
+			updateDisease(716196007);
 			break;
 		case 'cancer':
 			scene.add(fbxObjectCancer);
-      currentModel = fbxObjectCancer;
-			document.getElementById('slideDisease').innerHTML = 'Liver Cancer'
+			currentModel = fbxObjectCancer;
+			document.getElementById('slideDisease').innerHTML = 'Liver Cancer';
+			updateDisease(93870000);
 			break;
 		default:
-			console.log('JS Error: This should be unreachable.');
+			console.log('JS Error: This should be unreachable.');;
 			scene.add(fbxObjectHealthy);
-      currentModel = fbxObjectHealthy;
-			document.getElementById('slideDisease').innerHTML = 'Healthy Liver'
+			currentModel = fbxObjectHealthy;
+			document.getElementById('slideDisease').innerHTML = 'Healthy Liver';
+			updateDisease(1);
 	}
 }
 
 function removeEntity(object){
     var selectedObject = scene.getObjectByName(object.name);
     scene.remove(selectedObject);
+}
+
+function updateDisease(snomed) {
+	req = $.ajax({
+		url : '/update_Disease',
+		type : 'POST',
+		data : { Patient_snomed_code : snomed }
+	});
+		
+	req.done(function(data) {
+		$('#Disease_name').text(data.Disease_name);
+		$('#Disease_overview').text(data.Disease_overview);
+		$('#Disease_symptoms').text(data.Disease_symptoms);
+		$('#Disease_treatment').text(data.Disease_treatment);
+		$('#Disease_causes').text(data.Disease_causes);
+		$('#Disease_risk_factors').text(data.Disease_risk_factors);
+		$('#Disease_complications').text(data.Disease_complications);
+		$('#Disease_preventions').text(data.Disease_preventions);
+		$('#Disease_resources').text(data.Disease_resources);
+	});
 }
