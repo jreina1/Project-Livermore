@@ -16,10 +16,16 @@
   			<source src="/static/resources/Audio/ambient.mp3" type="audio/mpeg">
 		</audio>  -->
 		
+		<!-- Loading Screen Overlay -->
+		<div id="loading">
+			<div class="w3-center" id="loadingText">
+				Loading...<br><p class="p-loading">Thanks for your patience!</p>
+			</div>
+		</div>
+		
 		<!-- Overlay Help Page -->
 		<div id="overlay">
-
-  			<div id="text"> 
+  			<div id="overlayText"> 
       			<h1>Welcome to Project Livermore</h1>
       				<p> Project Livermore is a development project intended to address the issue of providing patients with timely and engaging educational materials consistent with a diagnosis they may have received. This project is a prototype intended to facilitate the dissemination of educational materials by providing a standards-based inter-operable tool that can plug into a provider patient management system that makes it easier for the physician to send the information to the patient and make it more possible to make patient education a priority.  </p>
       				<p>This tool is primarily meant to support patient education by providing a 3D visualization of the organ affected per their diagnosis with the ability to manipulate the model in 3D Space. The patient is also able to visualize the disease path progression should they not adhere to treatment or view their organ in a healthy state. In addition, Project Livermore also provides advanced text explanations per the 3D model being viewed with additional link out resources to scientific organizations for more information. </p>
@@ -155,7 +161,6 @@
 					<input type="range" min="0" max="0" class="slider" id="diseaseRange">
 					<p id="slideLabel">No Patient Selected</p>
 					<p id="slideDisease">Healthy Liver</p>
-					<p class="p-warn">Note: 3D Model may take some time to load!</p>
 				</div>
 			</div>
 			

@@ -54,7 +54,7 @@ function init() {
   var onProgress = function (xhr) {
     if (xhr.lengthComputable) {
       var percentComplete = xhr.loaded / xhr.total * 100; console.log(Math.round(percentComplete, 2) + '% downloaded');
-    }
+    } 
   };
 
   var onError = function (xhr) {
@@ -72,35 +72,35 @@ function init() {
     currentModel = fbxObjectHealthy;
   }, onProgress, onError);
 
-  loader.load(fbxPathFatty, function (object) {
-    object.name = 'fatty';
-    fbxObjectFatty = object;
-  }, onProgress, onError);
-
-  loader.load(fbxPathFibrosis, function (object) {
-    object.name = 'fibrosis';
-    fbxObjectFibrosis = object;
-  }, onProgress, onError);
-
-  loader.load(fbxPathCirrhosis, function (object) {
-    object.name = 'cirrhosis';
-    fbxObjectCirrhosis = object;
-  }, onProgress, onError);
-
-  loader.load(fbxPathBenign, function (object) {
-    object.name = 'benign';
-    fbxObjectBenign = object;
-  }, onProgress, onError);
-
-  loader.load(fbxPathPoly, function (object) {
-    object.name = 'polycystic';
-    fbxObjectPoly = object;
-  }, onProgress, onError);
-
-  loader.load(fbxPathCancer, function (object) {
-    object.name = 'cancer';
-    fbxObjectCancer = object;
-  }, onProgress, onError);
+//  loader.load(fbxPathFatty, function (object) {
+//    object.name = 'fatty';
+//    fbxObjectFatty = object;
+//  }, onProgress, onError);
+//
+//  loader.load(fbxPathFibrosis, function (object) {
+//    object.name = 'fibrosis';
+//    fbxObjectFibrosis = object;
+//  }, onProgress, onError);
+//
+//  loader.load(fbxPathCirrhosis, function (object) {
+//    object.name = 'cirrhosis';
+//    fbxObjectCirrhosis = object;
+//  }, onProgress, onError);
+//
+//  loader.load(fbxPathBenign, function (object) {
+//    object.name = 'benign';
+//    fbxObjectBenign = object;
+//  }, onProgress, onError);
+//
+//  loader.load(fbxPathPoly, function (object) {
+//    object.name = 'polycystic';
+//    fbxObjectPoly = object;
+//  }, onProgress, onError);
+//
+//  loader.load(fbxPathCancer, function (object) {
+//    object.name = 'cancer';
+//    fbxObjectCancer = object;
+//  }, onProgress, onError);
 
 
 
