@@ -38,7 +38,8 @@ public class FHIRConnector {
 			prop.load(input);
 			String host = prop.getProperty("fhir.host");
 			String port = prop.getProperty("fhir.port");
-		
+		System.out.println(host);
+		System.out.println(port);
 		//String url = "http://hapi.fhir.org/baseDstu3";	
 		String url = "http://" + host + ":" + port + "/baseDstu3";
 		System.out.println(url);
