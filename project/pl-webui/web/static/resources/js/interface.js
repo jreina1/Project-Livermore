@@ -9,11 +9,7 @@ $(document).ready(function() {
 		
 		var patient = $(this).attr('value');
 		updatePatient(patient);
-		
-		$('#diseaseRange').prop('min', 1);
-		$('#diseaseRange').prop('max', 100);
-		$('#diseaseRange').prop('value', 34);
-		$('#diseaseRange').prop('step', 33);
+		setSlider(1, 100, 33, 34);
 		
 		$('#slideLabel').html('Patient One');
 		switchModel('fatty');
@@ -24,11 +20,7 @@ $(document).ready(function() {
 		
 		var patient = $(this).attr('value');
 		updatePatient(patient);
-		
-		$('#diseaseRange').prop('min', 0);
-		$('#diseaseRange').prop('max', 100);
-		$('#diseaseRange').prop('value', 50);
-		$('#diseaseRange').prop('step', 50);
+		setSlider(0, 100, 50, 50);
 		
 		$('#slideLabel').html('Patient Two');
 		switchModel('benign');
@@ -39,12 +31,8 @@ $(document).ready(function() {
 		
 		var patient = $(this).attr('value');
 		updatePatient(patient);
-		
-		$('#diseaseRange').prop('min', 0);
-		$('#diseaseRange').prop('max', 100);
-		$('#diseaseRange').prop('value', 100);
-		$('#diseaseRange').prop('step', 100);
-		
+		setSlider(0, 100, 100, 100);
+				
 		$('#slideLabel').html('Patient Three');
 		switchModel('polycystic');
 		path_id = 6;
@@ -54,11 +42,7 @@ $(document).ready(function() {
 		
 		var patient = $(this).attr('value');
 		updatePatient(patient);
-		
-		$('#diseaseRange').prop('min', 1);
-		$('#diseaseRange').prop('max', 100);
-		$('#diseaseRange').prop('value', 1);
-		$('#diseaseRange').prop('step', 100);
+		setSlider(0, 0, 0, 0);
 		
 		$('#slideLabel').html('Patient Four');
 		switchModel('healthy');
@@ -79,17 +63,20 @@ $(document).ready(function() {
 //		
 //		var patient = $(this).attr('value');
 //		updatePatient(patient);
-//		
-//		$('#diseaseRange').prop('min', 1);
-//		$('#diseaseRange').prop('max', 100);
-//		$('#diseaseRange').prop('value', 1);
-//		$('#diseaseRange').prop('step', 33);
+//		setSlider(1, 100, 33, 1);
 //		
 //		$('#slideLabel').html('Patient Five');
 //		
 //		path_id = 10;
 //	});
 });
+
+function setSlider(min, max, step, value) {
+	$('#diseaseRange').prop('min', min);
+	$('#diseaseRange').prop('max', max);
+	$('#diseaseRange').prop('step', step);
+	$('#diseaseRange').prop('value', value);
+};
 
 function updatePatient(patient) {
 	req = $.ajax({
@@ -105,7 +92,7 @@ function updatePatient(patient) {
 		$('#Patient_symptoms').text(data.Patient_symptoms);
 		$('#Patient_treatment').text(data.Patient_treatment);
 	});
-}
+};
 
 
 // Hide or Show the Disease Information panel
@@ -116,7 +103,7 @@ function infoHide(id) {
 	} else {
 		x.className = x.className.replace(' w3-hide', '');
 	}
-}
+};
 
 // Update Slider
 var slider_input = document.getElementById('diseaseRange');
@@ -219,22 +206,3 @@ slider_input.addEventListener('input', function() {
 	}
 
 }, false);
-
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('loading', false);
-});

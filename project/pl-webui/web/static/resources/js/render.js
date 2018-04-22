@@ -48,6 +48,10 @@ function init() {
   var manager = new THREE.LoadingManager();
   manager.onProgress = function (item, loaded, total) {
     console.log(item, loaded, total);
+    if (loaded == total) {
+    	console.log('Loading complete!');
+    	show('loading', false);
+    }
   };
 
   // Model
@@ -63,7 +67,6 @@ function init() {
 
   // Load model using FBXLoader
   loader = new THREE.FBXLoader(manager);
-  // loadObj(fbxPath);
 
   loader.load(fbxPathHealthy, function (object) {
     object.name = 'healthy';
@@ -219,4 +222,8 @@ function updateDisease(snomed) {
 		$('#Disease_preventions').text(data.Disease_preventions);
 		$('#Disease_resources').text(data.Disease_resources);
 	});
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
 }
