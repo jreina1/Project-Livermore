@@ -1,9 +1,8 @@
 1,1,Healthy Liver,"The liver is the second largest organ in your body and is located under your rib cage on the right side. It weighs about three pounds and is shaped like a football that is flat on one side. The liver performs many jobs in your body: it processes what you eat and drink into energy and nutrients your body can use. The liver also removes harmful substances from your blood. A healthy liver has the amazing ability to grow back, or regenerate, when it is damaged. Anything that keeps your liver from its function or from growing back after injury may put your life in danger!",NULL,NULL,NULL,NULL,NULL,"
   Eating a healthy diet and exercising regularly help the liver to work well. Eating an unhealthy diet can lead to liver disease. 
-
-  - Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells.
-  \n- Manage your medications: When medicines are taken incorrectly- by taking too much or the wrong type or by mizing- the liver can be harmed, Follow dosing instructions and learn about medicines and how they can affect the liver will lead to protection.
-  \x0A - Avoid breathing in or touching toxins: Toxins can injure liver cells. Limit direct contact with toxins from cleaning and aerosol products, insecticides, chemicals, and additives in cigarettes
+- Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells.
+                                                                           - Manage your medications: When medicines are taken incorrectly- by taking too much or the wrong type or by mizing- the liver can be harmed, Follow dosing instructions and learn about medicines and how they can affect the liver will lead to protection.
+- Avoid breathing in or touching toxins: Toxins can injure liver cells. Limit direct contact with toxins from cleaning and aerosol products, insecticides, chemicals, and additives in cigarettes
   ",https://www.aamg.co/liver/health-information-resources/liver/liver-wellness/; https://www.liverfoundation.org/for-patients/about-the-liver/health-wellness/  
 2,197315008,Non-Alcoholic Fatty Liver Disease,"
   &#9824;Nonalcoholic fatty liver disease is an umbrella term for a range of liver conditions affecting people who drink little to no alcohol. As the name implies, the main characteristic of nonalcoholic fatty liver disease is too much fat stored in liver cells.
@@ -31,8 +30,6 @@ Possible signs and symptoms of nonalcoholic steatohepatitis and cirrhosis (advan
   <li>Red palms </li>
   <li>Yellowing of the skin and eyes (jaundice) </li>
   
-  
-
 </ul> ","<ul>
 
   <li>The first line of treatment is usually weight loss through a combination of a healthy diet and exercise. Losing weight addresses the conditions that contribute to nonalcoholic fatty liver disease. Ideally, a loss of 10 percent of body weight is desirable, but improvement in risk factors can become apparent if you lose even three to five percent of your starting weight. Weight-loss surgery is also an option for those who need to lose a great deal of weight. </li>
