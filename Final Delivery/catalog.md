@@ -1,7 +1,7 @@
 # Project Catalog
 |Team Name| Project Name | Team Members
 |--|--|--|
-| Team Livermore | Project Livermore | Jennifer Reina, Andrew Lam, Cheryll Lockett, Marcos Jorge, Rafay Syed
+| Team Livermore | Project Livermore | Jennifer Reina, Andrew Lam, Cheryl Lockett, Marcos Jorge, Rafay Syed
 
 ## GitHub Link
 https://github.gatech.edu/gt-hit-spring2018/Project-Livermore
