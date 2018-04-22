@@ -11,6 +11,7 @@ https://github.gatech.edu/gt-hit-spring2018/Project-Livermore
 ```
 ├── Final\ Delivery
 │   ├── Manual\ -\ LiverMore.pdf
+│   ├── Gantt Chart and Task List.pdf
 │   ├── Research
 │   │   ├── EdTech\ Research
 │   │   │   ├── Andy
