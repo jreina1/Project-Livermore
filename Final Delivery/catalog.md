@@ -8,7 +8,7 @@ https://github.gatech.edu/gt-hit-spring2018/Project-Livermore
 
 # File Structure
 
-'''
+```
 ├── Final\ Delivery
 │   ├── Manual\ -\ LiverMore.pdf
 │   ├── Research
@@ -132,4 +132,4 @@ https://github.gatech.edu/gt-hit-spring2018/Project-Livermore
     │           ├── help.html
     │           └── index.html
     └── runProjectNotes.txt
-'''
+```
