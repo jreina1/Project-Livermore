@@ -3,7 +3,6 @@ Project Livermore
 ```
 File Structure
 
-```
 ├── Final\ Delivery
 │   ├── Final\ Gantt\ chart\ -\ LiverMore.pdf
 │   ├── Manual\ -\ LiverMore.md
