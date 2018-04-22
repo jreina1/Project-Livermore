@@ -1,9 +1,9 @@
 1,1,Healthy Liver,"The liver is the second largest organ in your body and is located under your rib cage on the right side. It weighs about three pounds and is shaped like a football that is flat on one side. The liver performs many jobs in your body: it processes what you eat and drink into energy and nutrients your body can use. The liver also removes harmful substances from your blood. A healthy liver has the amazing ability to grow back, or regenerate, when it is damaged. Anything that keeps your liver from its function or from growing back after injury may put your life in danger!",NULL,NULL,NULL,NULL,NULL,"
   Eating a healthy diet and exercising regularly help the liver to work well. Eating an unhealthy diet can lead to liver disease. 
-- Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells.
-                                                                           - Manage your medications: When medicines are taken incorrectly- by taking too much or the wrong type or by mizing- the liver can be harmed, Follow dosing instructions and learn about medicines and how they can affect the liver will lead to protection.                                    
-- Avoid breathing in or touching toxins: Toxins can injure liver cells. Limit direct contact with toxins from cleaning and aerosol products, insecticides, chemicals, and additives in cigarettes
-  ",https://www.aamg.co/liver/health-information-resources/liver/liver-wellness/; https://www.liverfoundation.org/for-patients/about-the-liver/health-wellness/  
+  - Limit the Amount of alcohol you drink: Alcohol can damage or destroy liver cells.
+  - Manage your medications: When medicines are taken incorrectly- by taking too much or the wrong type or by mizing- the liver can be harmed, Follow dosing instructions and learn about medicines and how they can affect the liver will lead to protection.
+  - Avoid breathing in or touching toxins: Toxins can injure liver cells. Limit direct contact with toxins from cleaning and aerosol products, insecticides, chemicals, and additives in cigarettes
+  ",https://www.aamg.co/liver/health-information-resources/liver/liver-wellness/; * https://www.liverfoundation.org/for-patients/about-the-liver/health-wellness/  
 2,197315008,Non-Alcoholic Fatty Liver Disease,"
   &#9824;Nonalcoholic fatty liver disease is an umbrella term for a range of liver conditions affecting people who drink little to no alcohol. As the name implies, the main characteristic of nonalcoholic fatty liver disease is too much fat stored in liver cells.
   * Nonalcoholic steatohepatitis, a potentially serious form of the disease, is marked by liver inflammation, which may progress to scarring and irreversible damage. This damage is similar to the damage caused by heavy alcohol use. At its most severe, nonalcoholic steatohepatitis can progress to cirrhosis and liver failure
@@ -30,6 +30,8 @@ Possible signs and symptoms of nonalcoholic steatohepatitis and cirrhosis (advan
   <li>Red palms </li>
   <li>Yellowing of the skin and eyes (jaundice) </li>
   
+  
+
 </ul> ","<ul>
 
   <li>The first line of treatment is usually weight loss through a combination of a healthy diet and exercise. Losing weight addresses the conditions that contribute to nonalcoholic fatty liver disease. Ideally, a loss of 10 percent of body weight is desirable, but improvement in risk factors can become apparent if you lose even three to five percent of your starting weight. Weight-loss surgery is also an option for those who need to lose a great deal of weight. </li>
@@ -172,7 +174,7 @@ Hepatitis C infection and liver cirrhosis
 Liver cirrhosis from other causes, such as an autoimmune disease, excessive alcohol use, nonalcoholic fatty liver disease and inherited hemochromatosis
 Primary biliary cirrhosis
 Discuss the pros and cons of screening with your doctor. Together you can decide whether screening is right for you based on your risk. Screening typically involves an ultrasound exam every six months.",<ul><li>https://www.mayoclinic.org/diseases-conditions/liver-cancer/symptoms-causes/syc-20353659</li><li>https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/liver-cancer/</li></ul>
-4,1111,Liver Cirrhosis,"Cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism. The liver carries out several necessary functions, including detoxifying harmful substances in your body, cleaning your blood and making vital nutrients.
+4,19943007,Liver Cirrhosis,"Cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism. The liver carries out several necessary functions, including detoxifying harmful substances in your body, cleaning your blood and making vital nutrients.
 
 Cirrhosis occurs in response to damage to your liver. Each time your liver is injured, it tries to repair itself. In the process, scar tissue forms. As cirrhosis progresses, more and more scar tissue forms, making it difficult for the liver to function.
 
@@ -266,7 +268,7 @@ Eat a healthy diet. Choose a plant-based diet that's full of fruits and vegetabl
 Maintain a healthy weight. An excess amount of body fat can damage your liver. Talk to your doctor about a weight-loss plan if you are obese or overweight.
 Reduce your risk of hepatitis. Sharing needles and having unprotected sex can increase your risk of hepatitis B and C. Ask your doctor about hepatitis vaccinations.
 If you're concerned about your risk of liver cirrhosis, talk to your doctor about ways you can reduce your risk.",<ul><li>https://www.mayoclinic.org/diseases-conditions/cirrhosis/symptoms-causes/syc-20351487</li><li>https://www.liverfoundation.org/for-patients/about-the-liver/diseases-of-the-liver/cirrhosis/</li></ul>
-5,62484002,Liver Fibrosis,"Liver fibrosis refers to the accumulation of tough, fibrous scar tissue in the liver.
+5,93469005,Liver Fibrosis,"Liver fibrosis refers to the accumulation of tough, fibrous scar tissue in the liver.
 Formation of scar tissue is a normal bodily response to injury, but in fibrosis
 this healing process goes wrong. When hepatocytes (functional liver cells) are
 injured due to infection with a virus, heavy alcohol consumption, toxins, trauma,
