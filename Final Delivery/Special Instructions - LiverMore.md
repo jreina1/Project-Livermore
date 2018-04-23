@@ -5,9 +5,9 @@
 
 **Team Members:**
 - Jennifer Reina
-- Rafael Syed
+- Rafay Syed
 - Marcos Jorge
-- Cheryl Lockette
+- Cheryl Lockett
 - Andrew Lam
 
 >After getting the file structure set up and execute the "docker-compose up" command.
