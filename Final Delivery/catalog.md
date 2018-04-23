@@ -11,6 +11,7 @@ https://github.gatech.edu/gt-hit-spring2018/Project-Livermore
 ```
 ├── Final\ Delivery
 │   ├── Final\ Gantt\ chart\ -\ LiverMore.pdf
+│   ├── Final\ Project\ -\ Livermore.pdf
 │   ├── Manual\ -\ LiverMore.md
 │   ├── Manual\ -\ Livermore.pdf
 │   ├── Research
