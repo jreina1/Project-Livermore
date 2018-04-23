@@ -28,7 +28,7 @@ If running locally (instructions assume docker and docker-compose are installed 
 
 1. Run
 ```
-docker-compose up
+docker-compose up --build
 ```
 2. Wait about 3 minutes, launch your browser, and type the following address in the address bar and press Enter/Return on the keyboard:
 ```
