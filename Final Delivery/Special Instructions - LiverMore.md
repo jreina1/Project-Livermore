@@ -1,6 +1,8 @@
 # Special Instructions
 **Team Name:** Liver More
-**Project Name:** Project Liver More
+
+**Project Name:** Project Livermore
+
 **Github link:** https://github.gatech.edu/gt-hit-spring2018/Project-Livermore
 
 **Team Members:**
@@ -10,25 +12,37 @@
 - Cheryl Lockett
 - Andrew Lam
 
->After getting the file structure set up and execute the "docker-compose up" command.
+**Instructions: Run over VPN to HDAP**
+Launch your desired web browser. 
 
-Launch your desired web browser. If running locally, type the following address in the address bar:
-```
-localhost:5000
-```
-If running from the Georgia tech VPN:
+If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard:
 ```
 https://cs6440-s18-prj14.apps.hdap.gatech.edu
 ```
-  Then press Enter or Return from your keyboard.
   
+>No other special instructions are needed to launch the application since we are using the HDAP pipeline. 
 
->No other special instructions are needed to launch the application since we are using the HDAP pipeline. The following are commands that were useful to us while troubleshooting and running specific tests.
+**Instructions: Run Locally**
+If running locally (instructions assume docker is installed on your system), 
 
+1. Run
+```
+docker-compose up
+```
+2. Wait about 2-3 minutes and type the following address in the address bar and press Enter/Return on the keyboard:
+```
+localhost:5000
+```
+3. The FHIR server is located at port 8080, so if desired, it can be visited with the web browser at:
+```
+localhost:8080
+```
+
+**The following are commands that were useful to us while troubleshooting and running specific tests.**
 
 **Connect to database while running**
 
-Type this on the host command line to get to the mysql command line:
+Type this on the host command line to get to the mysql command line (instructions assume a MySql client is installed on your system):
 
 ```
 mysql -u iwant -pmoreLiverPlease --protocol=TCP
@@ -43,6 +57,8 @@ SELECT * FROM Patient;
 ```
 
 **Run an individual container**
+
+The following instructions pertain to standalone containers without network connections to one another.
 
 ```
 cd <directory (one of pl-webui, pl-mysql, pl-fhircxn)>
@@ -70,4 +86,11 @@ docker run -it -p 3306:3306 pl-mysql
 ```
 docker build -t pl-fhircxn .
 docker run -it pl-fhircxn
+```
+
+**FHIR server**
+
+```
+docker build -t pl-fhir .
+docker run -it pl-fhir
 ```

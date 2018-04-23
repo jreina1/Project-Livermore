@@ -13,14 +13,33 @@
 - Cheryl Lockett
 - Andrew Lam
 
-Launch your desired web browser, and in the address bar type in localhost:5000  if running locally or https://cs6440-s18-prj14.apps.hdap.gatech.edu if running from the Georgia tech VPN.  Then press Enter or Return from your keyboard.
+**Instructions: Run App over VPN to HDAP**
+Launch your desired web browser. 
+
+If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard:
+```
+https://cs6440-s18-prj14.apps.hdap.gatech.edu
+```
+
+**Instructions: Run App Locally**
+If running locally (instructions assume docker is installed on your system), 
+
+1. Run
+```
+docker-compose up
+```
+2. Wait about 3 minutes and type the following address in the address bar and press Enter/Return on the keyboard:
+```
+localhost:5000
+```
+
 
 >Depending on the connection speed and web browser, you will be presented with a loading message. Please be patient (no pun intended) while the application retrieves all the Data Base information and renders the 3D simulation. The patient information and disease information may not load at the same time as the 3D Liver. This process may take a few minutes.
 
 
 ### Patient Links Section:
 
-Once the page has been completely loaded, you should see a list of patients on the column on your left hand side. By clicking on any of these patients you will be able to take a look at their respective patient information, Disease Information, and 3D simulation of the Liver. Under all the patient links, we have added a Help link that provides instructions and information about the application. Once the help link is clicked, you may scroll up and down to read the information as desired. To Exit the help screen, just click anywhere on the screen and the information should disappear, taking you back to the main screen.
+Once the page has been completely loaded (about 2-3 minutes), you should see a list of patients on the column on your left hand side. By clicking on any of these patients you will be able to take a look at their respective patient information, Disease Information, and 3D simulation of the Liver. Under all the patient links, we have added a Help link that provides instructions and information about the application. Once the help link is clicked, you may scroll up and down to read the information as desired. To Exit the help screen, just click anywhere on the screen and the information should disappear, taking you back to the main screen.
 We have added a Georgia Tech image on the top left hand side of the screen, clicking this image will take you to the front page of www.gatech.edu. 
 
 
