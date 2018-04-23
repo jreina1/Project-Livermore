@@ -17,7 +17,7 @@
 
 1. Launch your desired web browser. 
 
-2. If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard:
+2. If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard (wait 2-3 minutes for it to load before using it):
 ```
 https://cs6440-s18-prj14.apps.hdap.gatech.edu
 ```
