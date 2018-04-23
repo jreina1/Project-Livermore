@@ -24,7 +24,7 @@ https://cs6440-s18-prj14.apps.hdap.gatech.edu
 
 **Instructions: Run App Locally**
 
-If running locally (instructions assume docker is installed on your system), 
+If running locally (instructions assume docker and docker-compose are installed on your system), 
 
 1. Run
 ```
