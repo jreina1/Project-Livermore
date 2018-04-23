@@ -26,8 +26,9 @@ https://cs6440-s18-prj14.apps.hdap.gatech.edu
 
 If running locally (instructions assume docker and docker-compose are installed on your system), 
 
-1. Run
+1. Change to the base directory and run docker-compose to build and start. 
 ```
+cd Project-Livermore/project
 docker-compose up --build
 ```
 2. Wait about 3 minutes, launch your browser, and type the following address in the address bar and press Enter/Return on the keyboard:
