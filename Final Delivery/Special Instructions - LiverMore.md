@@ -13,9 +13,10 @@
 - Andrew Lam
 
 **Instructions: Run over VPN to HDAP**
-Launch your desired web browser. 
 
-If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard:
+1. Launch your desired web browser. 
+
+2. If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard:
 ```
 https://cs6440-s18-prj14.apps.hdap.gatech.edu
 ```
@@ -23,6 +24,7 @@ https://cs6440-s18-prj14.apps.hdap.gatech.edu
 >No other special instructions are needed to launch the application since we are using the HDAP pipeline. 
 
 **Instructions: Run Locally**
+
 If running locally (instructions assume docker is installed on your system), 
 
 1. Run
