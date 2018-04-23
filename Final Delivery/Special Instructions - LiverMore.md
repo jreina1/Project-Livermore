@@ -16,7 +16,7 @@
 
 1. Launch your desired web browser. 
 
-2. If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard:
+2. If running from the Georgia tech VPN, type the following into the address bar and press Enter/Return on the keyboard (wait 2-3 minutes for it to load before using it):
 ```
 https://cs6440-s18-prj14.apps.hdap.gatech.edu
 ```
@@ -25,13 +25,14 @@ https://cs6440-s18-prj14.apps.hdap.gatech.edu
 
 **Instructions: Run Locally**
 
-If running locally (instructions assume docker is installed on your system), 
+If running locally (instructions assume docker and docker-compose are installed on your system), 
 
-1. Run
+1. Change to the base directory and run docker-compose to build and start. 
 ```
-docker-compose up
+cd Project-Livermore/project
+docker-compose up --build
 ```
-2. Wait about 2-3 minutes and type the following address in the address bar and press Enter/Return on the keyboard:
+2. Wait about 3 minutes, launch your browser, and type the following address in the address bar and press Enter/Return on the keyboard:
 ```
 localhost:5000
 ```
