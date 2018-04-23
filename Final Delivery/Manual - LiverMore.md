@@ -8,7 +8,7 @@
 
 **Team Members:**
 - Jennifer Reina
-- Rafael Syed
+- Rafay Syed
 - Marcos Jorge
 - Cheryl Lockett
 - Andrew Lam
