@@ -53,9 +53,16 @@ $(document).ready(function() {
 		$('#overlay').css('display','none');
 	});
 	
-	
+	$('#overlayTwo').click(function() {
+		$('#overlayTwo').css('display','none');
+	});
+ 
 	$('#helpPage').click(function() {
 		$('#overlay').css('display','block');
+	});
+	
+	$('#liverAnatomy').click(function() {
+		$('#overlayTwo').css('display','block');
 	});
 	
 	
