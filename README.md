@@ -5,8 +5,10 @@ File Structure
 
 ├── Final\ Delivery
 │   ├── Final\ Gantt\ chart\ -\ LiverMore.pdf
+│   ├── IHI\ Final\ Project\ Presentation\ -\ Team\ Livermore.pdf
 │   ├── Manual\ -\ LiverMore.md
-│   ├── Manual\ -\ Livermore.pdf
+│   ├── Manual\ -\ LiverMore.pdf
+│   ├── Project\ Livermore\ Feedback\ (Responses).pdf
 │   ├── Research
 │   │   ├── Application\ Architecture.pdf
 │   │   ├── EdTech\ Research
@@ -106,6 +108,11 @@ File Structure
     │       │   │   │   └── ambient.mp3
     │       │   │   ├── css
     │       │   │   │   └── style.css
+    │       │   │   ├── images
+    │       │   │   │   ├── model1.jpg
+    │       │   │   │   ├── model2.jpg
+    │       │   │   │   ├── model_1.jpg
+    │       │   │   │   └── model_2.jpg
     │       │   │   ├── js
     │       │   │   │   ├── interface.js
     │       │   │   │   ├── render.js
@@ -119,7 +126,9 @@ File Structure
     │       │   │   │   ├── liver_healthy.fbx
     │       │   │   │   └── liver_polycystic.fbx
     │       │   │   └── textures
-    │       │   │       └── backgrounddetailed6.jpg
+    │       │   │       ├── backgrounddetailed6.jpg
+    │       │   │       ├── model1.PNG
+    │       │   │       └── model2.PNG
     │       │   └── vendors
     │       │       └── threejs
     │       │           ├── FBXLoader.js
