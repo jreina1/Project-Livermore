@@ -1,6 +1,18 @@
 # Project-Livermore
-Project Livermore
+
+Project Livermore: 3D Simulation of Human Anatomy and Patient Education on Medical Conditions
+
+Summary:
+Spring 2018 term project for CS 6440: Introduction to Health Informatics and CS 6460: Educational Technology.
+Project Livermore is a development project intended to address the issue of providing patients with timely and engaging personalized educational materials consistent with a diagnosis they may have received. This is intended to demonstrate a proof-of-concept tool to facilitate the dissemination of educational materials by way of a standards-based inter-operable tool whereby a patient is able to observe and manipulate a 3D model based on their diagnosis, observe disease progression, and read supporting literature. The tool is designed around a problem-based learning pedagogy that uses simulation-based learning to promote understanding.
+
+Methodology:
+This application was implemented using a collection of docker containers. Each container provides a service. The services developed were as follows: the web user interface containing the patient portal, a MySQL database, FHIR connector service, and FHIR server.
+The patient portal is made with HTML, CSS, Javascript, Blender, three.js, Flask, and Python. It also includes starter liver models provided by the SketchFab website. The MySQL DB Container includes MySQL, bash scripts to load patient IDs and diseases into the database, and the file containing the disease educational materials that is loaded into the database. The liver disease educational materials are curated from the American Liver Foundation website. The FHIR Connector container contained an application to read patient data from a local FHIR server and then load selected patient data (patient name, the disease, diagnosis and treatment) into the MySQL database. The application uses Java and HAPI FHIR APIs. The FHIR Connector container also contains an application that automatically loads patient data into the FHIR server. This application uses NodeJS and a FHIR JSON tag_loader tool. For the FHIR container the project uses Daniel Johnson’s (Georgia Tech TA) FHIR server.
 ```
+
+
+
 File Structure
 
 ├── Final\ Delivery
